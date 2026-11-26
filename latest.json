@@ -1,0 +1,2497 @@
+{
+ "generated": "2026-11-25T20:46",
+ "periods": {
+  "hrh": 6,
+  "jlfb": 6
+ },
+ "through": {
+  "hrh": "2026-11-25",
+  "jlfb": "2026-11-25"
+ },
+ "partial": {
+  "hrh": true,
+  "jlfb": true
+ },
+ "projections": {
+  "source": "https://hashtagbasketball.com/import-v4/fantasy-basketball-projections",
+  "duration": "blend14",
+  "positions": "fantrax",
+  "show": "900",
+  "rows": 487,
+  "fetched": "2026-11-25T20:47:03"
+ },
+ "scoreboards": [
+  {
+   "league": "hrh",
+   "name": "High-Roller Hoops",
+   "period": 6,
+   "team": "Ankle Breakers",
+   "matchups": [
+    {
+     "opponent": "Chaewon Stan",
+     "record": "5-4-0",
+     "record_them": "4-5-0",
+     "games": 13,
+     "games_them": 11,
+     "categories": [
+      {
+       "category": "FG%",
+       "you": ".461",
+       "them": ".363",
+       "result": "WIN"
+      },
+      {
+       "category": "3PTM",
+       "you": "22",
+       "them": "18",
+       "result": "WIN"
+      },
+      {
+       "category": "FT%",
+       "you": ".733",
+       "them": ".750",
+       "result": "LOSS"
+      },
+      {
+       "category": "PTS",
+       "you": "208",
+       "them": "129",
+       "result": "WIN"
+      },
+      {
+       "category": "REB",
+       "you": "59",
+       "them": "38",
+       "result": "WIN"
+      },
+      {
+       "category": "AST",
+       "you": "54",
+       "them": "40",
+       "result": "WIN"
+      },
+      {
+       "category": "ST",
+       "you": "9",
+       "them": "12",
+       "result": "LOSS"
+      },
+      {
+       "category": "BLK",
+       "you": "3",
+       "them": "5",
+       "result": "LOSS"
+      },
+      {
+       "category": "TO",
+       "you": "28",
+       "them": "16",
+       "result": "LOSS"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "league": "jlfb",
+   "name": "JLFB Bowl",
+   "period": 6,
+   "team": "micpuc6",
+   "matchups": [
+    {
+     "opponent": "Brick Squad",
+     "record": "7-2-0",
+     "record_them": "2-7-0",
+     "games": 18,
+     "games_them": 16,
+     "categories": [
+      {
+       "category": "FG%",
+       "you": ".483",
+       "them": ".474",
+       "result": "WIN"
+      },
+      {
+       "category": "3PTM",
+       "you": "38",
+       "them": "22",
+       "result": "WIN"
+      },
+      {
+       "category": "FT%",
+       "you": ".758",
+       "them": ".722",
+       "result": "WIN"
+      },
+      {
+       "category": "PTS",
+       "you": "318",
+       "them": "194",
+       "result": "WIN"
+      },
+      {
+       "category": "REB",
+       "you": "91",
+       "them": "86",
+       "result": "WIN"
+      },
+      {
+       "category": "AST",
+       "you": "57",
+       "them": "58",
+       "result": "LOSS"
+      },
+      {
+       "category": "ST",
+       "you": "22",
+       "them": "10",
+       "result": "WIN"
+      },
+      {
+       "category": "BLK",
+       "you": "16",
+       "them": "9",
+       "result": "WIN"
+      },
+      {
+       "category": "TO",
+       "you": "37",
+       "them": "20",
+       "result": "LOSS"
+      }
+     ]
+    },
+    {
+     "opponent": "Black Swoosh",
+     "record": "4-5-0",
+     "record_them": "5-4-0",
+     "games": 18,
+     "games_them": 18,
+     "categories": [
+      {
+       "category": "FG%",
+       "you": ".483",
+       "them": ".510",
+       "result": "LOSS"
+      },
+      {
+       "category": "3PTM",
+       "you": "38",
+       "them": "28",
+       "result": "WIN"
+      },
+      {
+       "category": "FT%",
+       "you": ".758",
+       "them": ".820",
+       "result": "LOSS"
+      },
+      {
+       "category": "PTS",
+       "you": "318",
+       "them": "288",
+       "result": "WIN"
+      },
+      {
+       "category": "REB",
+       "you": "91",
+       "them": "100",
+       "result": "LOSS"
+      },
+      {
+       "category": "AST",
+       "you": "57",
+       "them": "60",
+       "result": "LOSS"
+      },
+      {
+       "category": "ST",
+       "you": "22",
+       "them": "19",
+       "result": "WIN"
+      },
+      {
+       "category": "BLK",
+       "you": "16",
+       "them": "13",
+       "result": "WIN"
+      },
+      {
+       "category": "TO",
+       "you": "37",
+       "them": "23",
+       "result": "LOSS"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "p_win": {
+  "hrh": [
+   0.585
+  ],
+  "jlfb": [
+   0.8420000000000001,
+   0.365
+  ]
+ },
+ "matchups": {
+  "hrh": {
+   "Chaewon Stan": {
+    "p_win": 0.585,
+    "mean_wins": 4.68,
+    "categories": [
+     {
+      "cat": "FG%",
+      "you": 0.452,
+      "them": 0.445,
+      "p_win": 0.557,
+      "leader": "you"
+     },
+     {
+      "cat": "FT%",
+      "you": 0.817,
+      "them": 0.79,
+      "p_win": 0.607,
+      "leader": "you"
+     },
+     {
+      "cat": "3PM",
+      "you": 68.2,
+      "them": 62.4,
+      "p_win": 0.8690000000000001,
+      "leader": "you"
+     },
+     {
+      "cat": "PTS",
+      "you": 570.4,
+      "them": 501.3,
+      "p_win": 0.948,
+      "leader": "you"
+     },
+     {
+      "cat": "REB",
+      "you": 154.2,
+      "them": 173.5,
+      "p_win": 0.075,
+      "leader": "them"
+     },
+     {
+      "cat": "AST",
+      "you": 143.4,
+      "them": 110.0,
+      "p_win": 1.0,
+      "leader": "you"
+     },
+     {
+      "cat": "STL",
+      "you": 32.5,
+      "them": 32.1,
+      "p_win": 0.5710000000000001,
+      "leader": "you"
+     },
+     {
+      "cat": "BLK",
+      "you": 13.7,
+      "them": 26.9,
+      "p_win": 0.0,
+      "leader": "them"
+     },
+     {
+      "cat": "TO",
+      "you": 65.4,
+      "them": 57.8,
+      "p_win": 0.053,
+      "leader": "them"
+     }
+    ]
+   }
+  },
+  "jlfb": {
+   "Brick Squad": {
+    "p_win": 0.8420000000000001,
+    "mean_wins": 5.3,
+    "categories": [
+     {
+      "cat": "FG%",
+      "you": 0.464,
+      "them": 0.477,
+      "p_win": 0.386,
+      "leader": "them"
+     },
+     {
+      "cat": "FT%",
+      "you": 0.788,
+      "them": 0.744,
+      "p_win": 0.7170000000000001,
+      "leader": "you"
+     },
+     {
+      "cat": "3PM",
+      "you": 80.5,
+      "them": 54.7,
+      "p_win": 1.0,
+      "leader": "you"
+     },
+     {
+      "cat": "PTS",
+      "you": 630.3,
+      "them": 508.0,
+      "p_win": 1.0,
+      "leader": "you"
+     },
+     {
+      "cat": "REB",
+      "you": 201.5,
+      "them": 221.0,
+      "p_win": 0.092,
+      "leader": "them"
+     },
+     {
+      "cat": "AST",
+      "you": 122.5,
+      "them": 131.7,
+      "p_win": 0.152,
+      "leader": "them"
+     },
+     {
+      "cat": "STL",
+      "you": 40.4,
+      "them": 31.3,
+      "p_win": 1.0,
+      "leader": "you"
+     },
+     {
+      "cat": "BLK",
+      "you": 29.3,
+      "them": 25.8,
+      "p_win": 0.9470000000000001,
+      "leader": "you"
+     },
+     {
+      "cat": "TO",
+      "you": 70.7,
+      "them": 59.9,
+      "p_win": 0.008,
+      "leader": "them"
+     }
+    ]
+   },
+   "Black Swoosh": {
+    "p_win": 0.365,
+    "mean_wins": 4.09,
+    "categories": [
+     {
+      "cat": "FG%",
+      "you": 0.464,
+      "them": 0.498,
+      "p_win": 0.21899999999999997,
+      "leader": "them"
+     },
+     {
+      "cat": "FT%",
+      "you": 0.788,
+      "them": 0.809,
+      "p_win": 0.392,
+      "leader": "them"
+     },
+     {
+      "cat": "3PM",
+      "you": 80.5,
+      "them": 65.8,
+      "p_win": 0.9990000000000001,
+      "leader": "you"
+     },
+     {
+      "cat": "PTS",
+      "you": 630.3,
+      "them": 629.0,
+      "p_win": 0.51,
+      "leader": "you"
+     },
+     {
+      "cat": "REB",
+      "you": 201.5,
+      "them": 200.0,
+      "p_win": 0.544,
+      "leader": "you"
+     },
+     {
+      "cat": "AST",
+      "you": 122.5,
+      "them": 135.8,
+      "p_win": 0.07,
+      "leader": "them"
+     },
+     {
+      "cat": "STL",
+      "you": 40.4,
+      "them": 40.1,
+      "p_win": 0.54,
+      "leader": "you"
+     },
+     {
+      "cat": "BLK",
+      "you": 29.3,
+      "them": 28.1,
+      "p_win": 0.723,
+      "leader": "you"
+     },
+     {
+      "cat": "TO",
+      "you": 70.7,
+      "them": 64.7,
+      "p_win": 0.095,
+      "leader": "them"
+     }
+    ]
+   }
+  }
+ },
+ "caps": {
+  "hrh": {
+   "used": 13,
+   "cap": 35,
+   "problems": []
+  },
+  "jlfb": {
+   "used": 18,
+   "cap": 40,
+   "problems": []
+  }
+ },
+ "lineups": {
+  "hrh": {
+   "days": [
+    {
+     "day": "2026-11-25",
+     "slots": "Flx1 Keegan Murray"
+    },
+    {
+     "day": "2026-11-27",
+     "slots": "PG Darius Garland, SG Tyrese Maxey, G Collin Gillespie, SF Nickeil Alexander-Walker, PF Saddiq Bey, F Trey Murphy III, C Derik Queen, Flx1 Daniss Jenkins, Flx2 Derrick White"
+    },
+    {
+     "day": "2026-11-28",
+     "slots": "G Tyrese Maxey, SF Franz Wagner, PF Tristan da Silva"
+    },
+    {
+     "day": "2026-11-29",
+     "slots": "PG Daniss Jenkins, SG Derrick White, G Trey Murphy III, SF Nickeil Alexander-Walker, PF Saddiq Bey, F Franz Wagner, C Derik Queen, Flx1 Collin Gillespie, Flx2 Darius Garland"
+    }
+   ],
+   "banked": 13,
+   "remaining": 22,
+   "remaining_cap": 22
+  },
+  "jlfb": {
+   "days": [
+    {
+     "day": "2026-11-27",
+     "slots": "G Trey Murphy III, G2 Herbert Jones, C Derik Queen, Flx1 Tyrese Maxey, Flx2 Paul George, Flx3 Saddiq Bey, Flx4 P.J. Washington Jr., Flx5 Myles Turner"
+    },
+    {
+     "day": "2026-11-28",
+     "slots": "G Tyrese Maxey, F Kyshawn George, F2 Desmond Bane, C Myles Turner, Flx2 Naz Reid, Flx5 Aday Mara"
+    },
+    {
+     "day": "2026-11-29",
+     "slots": "G Peyton Watson, F Herbert Jones, F2 Saddiq Bey, C Derik Queen, Flx2 Trey Murphy III, Flx3 Paul George, Flx4 Desmond Bane, Flx5 Donovan Mitchell"
+    }
+   ],
+   "banked": 18,
+   "remaining": 22,
+   "remaining_cap": 22
+  }
+ },
+ "injuries": {
+  "hrh": {
+   "league": "hrh",
+   "name": "High-Roller Hoops",
+   "team": "Ankle Breakers",
+   "period": 6,
+   "teams": [
+    "And-One",
+    "Ankle Breakers",
+    "Chaewon Stan",
+    "Exciting whites",
+    "HezBallah",
+    "Horses in the Back",
+    "Hugh Jass",
+    "LaBerhe Ball",
+    "Old Age Security",
+    "spidaman"
+   ],
+   "rows": [
+    {
+     "team": "Ankle Breakers",
+     "player": "Dylan Harper",
+     "status": "Out",
+     "note": "Harper (hip) is expected to miss two to three weeks, Brett Siegel of ClutchPoints.com reports.",
+     "mine": true,
+     "opponent": false
+    },
+    {
+     "team": "Ankle Breakers",
+     "player": "Evan Mobley",
+     "status": "Out",
+     "note": "Mobley will receive treatment and participate in rehab after the team confirmed a diagnosis of a right great toe sprain, and he'll be re-evaluated in the next 7-to-10 days.",
+     "mine": true,
+     "opponent": false
+    },
+    {
+     "team": "And-One",
+     "player": "OG Anunoby",
+     "status": "Out",
+     "note": "Anunoby (calf) participated in on-court work for the first time since sustaining the injury, Ian Begley of SportsNet New York reports.",
+     "mine": false,
+     "opponent": false
+    },
+    {
+     "team": "And-One",
+     "player": "Grayson Allen",
+     "status": "Out",
+     "note": "Allen (concussion) has been ruled out for Wednesday's game against Chicago.",
+     "mine": false,
+     "opponent": false
+    },
+    {
+     "team": "And-One",
+     "player": "Paolo Banchero",
+     "status": "Out",
+     "note": "Banchero is expected to be sidelined for the next four-to-six weeks due to a right high-ankle sprain, Shams Charania of ESPN reports.",
+     "mine": false,
+     "opponent": false
+    },
+    {
+     "team": "And-One",
+     "player": "Zach LaVine",
+     "status": "Out",
+     "note": "LaVine (knee) is listed as out for Wednesday's game versus the Warriors.",
+     "mine": false,
+     "opponent": false
+    },
+    {
+     "team": "And-One",
+     "player": "Duncan Robinson",
+     "status": "Out",
+     "note": "Robinson (quadriceps) is considered day-to-day as he progresses in his rehab, Eric Vincent of ClutchPoints.com reports.",
+     "mine": false,
+     "opponent": false
+    },
+    {
+     "team": "Chaewon Stan",
+     "player": "Cameron Boozer",
+     "status": "Out",
+     "note": "Boozer (ankle) will be re-evaluated in four weeks, Brett Siegel of ClutchPoints.com reports.",
+     "mine": false,
+     "opponent": true
+    },
+    {
+     "team": "Exciting whites",
+     "player": "Austin Reaves",
+     "status": "Out",
+     "note": "Reaves (heel) was a full participant in Wednesday's practice, Daniel Starkand of LakersNation.com reports.",
+     "mine": false,
+     "opponent": false
+    },
+    {
+     "team": "Exciting whites",
+     "player": "RJ Barrett",
+     "status": "Out",
+     "note": "Barrett has been diagnosed with a right hamstring strain and will be re-evaluated in two weeks, Brett Siegel of ClutchPoints.com reports.",
+     "mine": false,
+     "opponent": false
+    },
+    {
+     "team": "Exciting whites",
+     "player": "Kristaps Porzingis",
+     "status": "Out",
+     "note": "Porzingis announced on his social media that he's stepping away from basketball.",
+     "mine": false,
+     "opponent": false
+    },
+    {
+     "team": "HezBallah",
+     "player": "Norman Powell",
+     "status": "Out",
+     "note": "Powell has been diagnosed with a mild right hamstring strain and will be re-evaluated later this week.",
+     "mine": false,
+     "opponent": false
+    },
+    {
+     "team": "HezBallah",
+     "player": "Jalen Duren",
+     "status": "Out",
+     "note": "Duren (hamstring) is being assigned to the Motor City Cruise on Wednesday for practice as he ramps up for a return, Eric Vincent of ClutchPoints.com reports.",
+     "mine": false,
+     "opponent": false
+    },
+    {
+     "team": "HezBallah",
+     "player": "Caleb Wilson",
+     "status": "Out",
+     "note": "Wilson (hand) is expected to miss four to six weeks, Shams Charania of ESPN reports.",
+     "mine": false,
+     "opponent": false
+    },
+    {
+     "team": "Horses in the Back",
+     "player": "Ja Morant",
+     "status": "Out",
+     "note": "Head coach Micah Nori said Morant met with a doctor in Los Angeles, who gave him a positive outlook on his recovery from the hamstring injury. While Nori declined to update Morant's timetable, he added Morant \"may not be out for as long as we thought,\" Trail Blazers Insider Sean Highkin reports.",
+     "mine": false,
+     "opponent": false
+    },
+    {
+     "team": "Horses in the Back",
+     "player": "Jalen Smith",
+     "status": "Out",
+     "note": "Smith (illness) is listed as out for Wednesday's game against Charlotte.",
+     "mine": false,
+     "opponent": false
+    },
+    {
+     "team": "Horses in the Back",
+     "player": "Kawhi Leonard",
+     "status": "Out",
+     "note": "Leonard has begun individual on-court workouts following treatment to address swelling in his left knee, and he will be re-evaluated in one week, Marc J. Spears of ESPN.com reports.",
+     "mine": false,
+     "opponent": false
+    },
+    {
+     "team": "Old Age Security",
+     "player": "Stephen Curry",
+     "status": "Out",
+     "note": "Curry (abdomen) will be re-evaluated Friday after Thanksgiving, Anthony Slater of ESPN.com reports.",
+     "mine": false,
+     "opponent": false
+    },
+    {
+     "team": "spidaman",
+     "player": "Dejounte Murray",
+     "status": "Out",
+     "note": "Murray (ankle) is out for Friday's game against Memphis.",
+     "mine": false,
+     "opponent": false
+    },
+    {
+     "team": "Chaewon Stan",
+     "player": "Victor Wembanyama",
+     "status": "Day-To-Day",
+     "note": "Wembanyama (back) is questionable for Wednesday's game in Portland.",
+     "mine": false,
+     "opponent": true
+    },
+    {
+     "team": "HezBallah",
+     "player": "Jaylen Brown",
+     "status": "Day-To-Day",
+     "note": "Brown (hamstring) will receive imaging, and the Sixers will provide an update Thursday, Ky Carlin of USA Today reports.",
+     "mine": false,
+     "opponent": false
+    },
+    {
+     "team": "HezBallah",
+     "player": "Cade Cunningham",
+     "status": "Day-To-Day",
+     "note": "Cunningham (knee) is listed as out for Tuesday's game against Orlando.",
+     "mine": false,
+     "opponent": false
+    },
+    {
+     "team": "Horses in the Back",
+     "player": "DeAaron Fox",
+     "status": "Day-To-Day",
+     "note": "Fox (shin) is questionable to play Wednesday's game against the Trail Blazers.",
+     "mine": false,
+     "opponent": false
+    },
+    {
+     "team": "Hugh Jass",
+     "player": "Jaxson Hayes",
+     "status": "Day-To-Day",
+     "note": "Hayes (knee) has been ruled out for Monday's game against the Lakers.",
+     "mine": false,
+     "opponent": false
+    },
+    {
+     "team": "Old Age Security",
+     "player": "Joel Embiid",
+     "status": "Day-To-Day",
+     "note": "Embiid (illness) is out for Wednesday's game against Miami, Ira Winderman of the South Florida Sun Sentinel reports.",
+     "mine": false,
+     "opponent": false
+    }
+   ]
+  },
+  "jlfb": {
+   "league": "jlfb",
+   "name": "JLFB Bowl",
+   "team": "micpuc6",
+   "period": 6,
+   "teams": [
+    "Black Swoosh",
+    "Bosstrich",
+    "Brick Squad",
+    "Cam56",
+    "FantasyISO",
+    "Gala",
+    "Neifator",
+    "Tuskanak Lobos",
+    "bowlTeam8",
+    "micpuc6",
+    "unc00kedfoam",
+    "venomenom937"
+   ],
+   "rows": [
+    {
+     "team": "micpuc6",
+     "player": "Aday Mara",
+     "status": "Out",
+     "note": "Mara (leg) is out for Wednesday's game versus the Timberwolves.",
+     "mine": true,
+     "opponent": false
+    },
+    {
+     "team": "Black Swoosh",
+     "player": "Austin Reaves",
+     "status": "Out",
+     "note": "Reaves (heel) was a full participant in Wednesday's practice, Daniel Starkand of LakersNation.com reports.",
+     "mine": false,
+     "opponent": true
+    },
+    {
+     "team": "Bosstrich",
+     "player": "Kon Knueppel",
+     "status": "Out",
+     "note": "Knueppel (hamstring) was diagnosed with a left hamstring strain Sunday and will be re-evaluated in four weeks.",
+     "mine": false,
+     "opponent": false
+    },
+    {
+     "team": "Brick Squad",
+     "player": "CJ McCollum",
+     "status": "Out",
+     "note": "McCollum (calf) will miss at least four weeks, per Brad Rowland of the Locked On Podcast Network.",
+     "mine": false,
+     "opponent": true
+    },
+    {
+     "team": "Brick Squad",
+     "player": "Dejounte Murray",
+     "status": "Out",
+     "note": "Murray (ankle) is out for Friday's game against Memphis.",
+     "mine": false,
+     "opponent": true
+    },
+    {
+     "team": "Brick Squad",
+     "player": "Mark Williams",
+     "status": "Out",
+     "note": "Williams underwent surgery Thursday to repair a torn labrum in his left shoulder and will miss an extended period of time, Shams Charania of ESPN reports.",
+     "mine": false,
+     "opponent": true
+    },
+    {
+     "team": "Brick Squad",
+     "player": "Tyrese Haliburton",
+     "status": "Out",
+     "note": "Haliburton (hamstring) was recalled from the G League's Noblesville Boom on Tuesday, Tony East of Forbes.com reports.",
+     "mine": false,
+     "opponent": true
+    },
+    {
+     "team": "Brick Squad",
+     "player": "Maxime Raynaud",
+     "status": "Out",
+     "note": "Raynaud (knee) was recalled from the G League's Stockton Kings on Wednesday, Marc J. Spears of ESPN.com reports.",
+     "mine": false,
+     "opponent": true
+    },
+    {
+     "team": "Cam56",
+     "player": "Paolo Banchero",
+     "status": "Out",
+     "note": "Banchero is expected to be sidelined for the next four-to-six weeks due to a right high-ankle sprain, Shams Charania of ESPN reports.",
+     "mine": false,
+     "opponent": false
+    },
+    {
+     "team": "FantasyISO",
+     "player": "Tobias Harris",
+     "status": "Out",
+     "note": "Harris (calf) is likely to be sidelined until early December, per Jeff Garcia of KENS 5 San Antonio.",
+     "mine": false,
+     "opponent": false
+    },
+    {
+     "team": "FantasyISO",
+     "player": "Grayson Allen",
+     "status": "Out",
+     "note": "Allen (concussion) has been ruled out for Wednesday's game against Chicago.",
+     "mine": false,
+     "opponent": false
+    },
+    {
+     "team": "FantasyISO",
+     "player": "Jalen Smith",
+     "status": "Out",
+     "note": "Smith (illness) is listed as out for Wednesday's game against Charlotte.",
+     "mine": false,
+     "opponent": false
+    },
+    {
+     "team": "FantasyISO",
+     "player": "Lauri Markkanen",
+     "status": "Out",
+     "note": "Markkanen has been diagnosed with a non-displaced fracture in his right hand and will be sidelined for at least one month, Shams Charania of ESPN reports.",
+     "mine": false,
+     "opponent": false
+    },
+    {
+     "team": "Gala",
+     "player": "Stephen Curry",
+     "status": "Out",
+     "note": "Curry (abdomen) will be re-evaluated Friday after Thanksgiving, Anthony Slater of ESPN.com reports.",
+     "mine": false,
+     "opponent": false
+    },
+    {
+     "team": "Gala",
+     "player": "Chet Holmgren",
+     "status": "Out",
+     "note": "Holmgren underwent a biological treatment Friday to address a small patellar tendon tear and will miss at least 8-10 weeks, Nick Crain of Slam reports.",
+     "mine": false,
+     "opponent": false
+    },
+    {
+     "team": "Neifator",
+     "player": "Caleb Wilson",
+     "status": "Out",
+     "note": "Wilson (hand) is expected to miss four to six weeks, Shams Charania of ESPN reports.",
+     "mine": false,
+     "opponent": false
+    },
+    {
+     "team": "Neifator",
+     "player": "Jusuf Nurkic",
+     "status": "Out",
+     "note": "Nurkic (foot) has been cleared for on-court work and will be re-evaluated in one week.",
+     "mine": false,
+     "opponent": false
+    },
+    {
+     "team": "Neifator",
+     "player": "Dennis Schroder",
+     "status": "Out",
+     "note": "Schroder (hamstring) is out for Wednesday's game the Bulls.",
+     "mine": false,
+     "opponent": false
+    },
+    {
+     "team": "Neifator",
+     "player": "RJ Barrett",
+     "status": "Out",
+     "note": "Barrett has been diagnosed with a right hamstring strain and will be re-evaluated in two weeks, Brett Siegel of ClutchPoints.com reports.",
+     "mine": false,
+     "opponent": false
+    },
+    {
+     "team": "Tuskanak Lobos",
+     "player": "Brandon Williams",
+     "status": "Out",
+     "note": "Head coach Steve Kerr said Tuesday that Williams (hamstring) is questionable to play Wednesday against the Kings, per Dalton Johnson of NBC Sports Bay Area.",
+     "mine": false,
+     "opponent": false
+    },
+    {
+     "team": "Tuskanak Lobos",
+     "player": "Mitchell Robinson",
+     "status": "Out",
+     "note": "Robinson (illness) is out for Tuesday's game against Washington, Taylor Snow of the Celtics' official site reports.",
+     "mine": false,
+     "opponent": false
+    },
+    {
+     "team": "Tuskanak Lobos",
+     "player": "OG Anunoby",
+     "status": "Out",
+     "note": "Anunoby (calf) participated in on-court work for the first time since sustaining the injury, Ian Begley of SportsNet New York reports.",
+     "mine": false,
+     "opponent": false
+    },
+    {
+     "team": "Tuskanak Lobos",
+     "player": "Duncan Robinson",
+     "status": "Out",
+     "note": "Robinson (quadriceps) is considered day-to-day as he progresses in his rehab, Eric Vincent of ClutchPoints.com reports.",
+     "mine": false,
+     "opponent": false
+    },
+    {
+     "team": "Tuskanak Lobos",
+     "player": "Dylan Harper",
+     "status": "Out",
+     "note": "Harper (hip) is expected to miss two to three weeks, Brett Siegel of ClutchPoints.com reports.",
+     "mine": false,
+     "opponent": false
+    },
+    {
+     "team": "Tuskanak Lobos",
+     "player": "Kawhi Leonard",
+     "status": "Out",
+     "note": "Leonard has begun individual on-court workouts following treatment to address swelling in his left knee, and he will be re-evaluated in one week, Marc J. Spears of ESPN.com reports.",
+     "mine": false,
+     "opponent": false
+    },
+    {
+     "team": "Tuskanak Lobos",
+     "player": "Zach LaVine",
+     "status": "Out",
+     "note": "LaVine (knee) is listed as out for Wednesday's game versus the Warriors.",
+     "mine": false,
+     "opponent": false
+    },
+    {
+     "team": "Tuskanak Lobos",
+     "player": "Anthony Edwards",
+     "status": "Out",
+     "note": "Edwards underwent a successful arthroscopic procedure on his right knee Thursday, the Timberwolves announced.",
+     "mine": false,
+     "opponent": false
+    },
+    {
+     "team": "bowlTeam8",
+     "player": "Cameron Boozer",
+     "status": "Out",
+     "note": "Boozer (ankle) will be re-evaluated in four weeks, Brett Siegel of ClutchPoints.com reports.",
+     "mine": false,
+     "opponent": false
+    },
+    {
+     "team": "bowlTeam8",
+     "player": "Jalen Duren",
+     "status": "Out",
+     "note": "Duren (hamstring) is being assigned to the Motor City Cruise on Wednesday for practice as he ramps up for a return, Eric Vincent of ClutchPoints.com reports.",
+     "mine": false,
+     "opponent": false
+    },
+    {
+     "team": "unc00kedfoam",
+     "player": "Evan Mobley",
+     "status": "Out",
+     "note": "Mobley will receive treatment and participate in rehab after the team confirmed a diagnosis of a right great toe sprain, and he'll be re-evaluated in the next 7-to-10 days.",
+     "mine": false,
+     "opponent": false
+    },
+    {
+     "team": "venomenom937",
+     "player": "Norman Powell",
+     "status": "Out",
+     "note": "Powell has been diagnosed with a mild right hamstring strain and will be re-evaluated later this week.",
+     "mine": false,
+     "opponent": false
+    },
+    {
+     "team": "venomenom937",
+     "player": "Ja Morant",
+     "status": "Out",
+     "note": "Head coach Micah Nori said Morant met with a doctor in Los Angeles, who gave him a positive outlook on his recovery from the hamstring injury. While Nori declined to update Morant's timetable, he added Morant \"may not be out for as long as we thought,\" Trail Blazers Insider Sean Highkin reports.",
+     "mine": false,
+     "opponent": false
+    },
+    {
+     "team": "venomenom937",
+     "player": "Jaylin Williams",
+     "status": "Out",
+     "note": "Williams (back) is listed as out for Wednesday's game against Minnesota.",
+     "mine": false,
+     "opponent": false
+    },
+    {
+     "team": "micpuc6",
+     "player": "Aaron Nesmith",
+     "status": "Day-To-Day",
+     "note": "Nesmith is out for Monday's game against the Thunder due to right foot soreness.",
+     "mine": true,
+     "opponent": false
+    },
+    {
+     "team": "Brick Squad",
+     "player": "DeAaron Fox",
+     "status": "Day-To-Day",
+     "note": "Fox (shin) is questionable to play Wednesday's game against the Trail Blazers.",
+     "mine": false,
+     "opponent": true
+    },
+    {
+     "team": "FantasyISO",
+     "player": "Victor Wembanyama",
+     "status": "Day-To-Day",
+     "note": "Wembanyama (back) is questionable for Wednesday's game in Portland.",
+     "mine": false,
+     "opponent": false
+    },
+    {
+     "team": "Gala",
+     "player": "Jaxson Hayes",
+     "status": "Day-To-Day",
+     "note": "Hayes (knee) has been ruled out for Monday's game against the Lakers.",
+     "mine": false,
+     "opponent": false
+    },
+    {
+     "team": "Neifator",
+     "player": "Jaylen Brown",
+     "status": "Day-To-Day",
+     "note": "Brown (hamstring) will receive imaging, and the Sixers will provide an update Thursday, Ky Carlin of USA Today reports.",
+     "mine": false,
+     "opponent": false
+    },
+    {
+     "team": "Neifator",
+     "player": "Joel Embiid",
+     "status": "Day-To-Day",
+     "note": "Embiid (illness) is out for Wednesday's game against Miami, Ira Winderman of the South Florida Sun Sentinel reports.",
+     "mine": false,
+     "opponent": false
+    },
+    {
+     "team": "bowlTeam8",
+     "player": "Cade Cunningham",
+     "status": "Day-To-Day",
+     "note": "Cunningham (knee) is listed as out for Tuesday's game against Orlando.",
+     "mine": false,
+     "opponent": false
+    }
+   ]
+  }
+ },
+ "standings": {
+  "hrh": {
+   "league": "hrh",
+   "teams": 10,
+   "cut": 4,
+   "pool": 6,
+   "me": "Ankle Breakers",
+   "my_rank": 9,
+   "rows": [
+    {
+     "rank": 1,
+     "team": "LaBerhe Ball",
+     "record": "4-1-0",
+     "pct": 0.8,
+     "gb": 0.0
+    },
+    {
+     "rank": 2,
+     "team": "HezBallah",
+     "record": "4-1-0",
+     "pct": 0.8,
+     "gb": 0.0
+    },
+    {
+     "rank": 3,
+     "team": "spidaman",
+     "record": "3-2-0",
+     "pct": 0.6,
+     "gb": 1.0
+    },
+    {
+     "rank": 4,
+     "team": "Chaewon Stan",
+     "record": "3-2-0",
+     "pct": 0.6,
+     "gb": 1.0
+    },
+    {
+     "rank": 5,
+     "team": "Hugh Jass",
+     "record": "3-2-0",
+     "pct": 0.6,
+     "gb": 1.0
+    },
+    {
+     "rank": 6,
+     "team": "Horses in the Back",
+     "record": "2-3-0",
+     "pct": 0.4,
+     "gb": 2.0
+    },
+    {
+     "rank": 7,
+     "team": "Old Age Security",
+     "record": "2-3-0",
+     "pct": 0.4,
+     "gb": 2.0
+    },
+    {
+     "rank": 8,
+     "team": "And-One",
+     "record": "2-3-0",
+     "pct": 0.4,
+     "gb": 2.0
+    },
+    {
+     "rank": 9,
+     "team": "Ankle Breakers",
+     "record": "2-3-0",
+     "pct": 0.4,
+     "gb": 2.0
+    },
+    {
+     "rank": 10,
+     "team": "Exciting whites",
+     "record": "0-5-0",
+     "pct": 0.0,
+     "gb": 4.0
+    }
+   ]
+  },
+  "jlfb": {
+   "league": "jlfb",
+   "teams": 96,
+   "cut": 24,
+   "pool": 0,
+   "me": "micpuc6",
+   "my_rank": 64,
+   "rows": [
+    {
+     "rank": 1,
+     "team": "nacuamatata10",
+     "record": "61-28-1",
+     "pct": 0.683,
+     "gb": 0.0
+    },
+    {
+     "rank": 2,
+     "team": "kbw612",
+     "record": "60-30-0",
+     "pct": 0.667,
+     "gb": 1.5
+    },
+    {
+     "rank": 3,
+     "team": "jell8738",
+     "record": "59-29-2",
+     "pct": 0.667,
+     "gb": 1.5
+    },
+    {
+     "rank": 4,
+     "team": "figure_eight",
+     "record": "56-30-4",
+     "pct": 0.644,
+     "gb": 3.5
+    },
+    {
+     "rank": 5,
+     "team": "The Wizards of Oz",
+     "record": "55-34-1",
+     "pct": 0.617,
+     "gb": 6.0
+    },
+    {
+     "rank": 6,
+     "team": "DU30",
+     "record": "55-35-0",
+     "pct": 0.611,
+     "gb": 6.5
+    },
+    {
+     "rank": 7,
+     "team": "justinofnixa",
+     "record": "54-34-2",
+     "pct": 0.611,
+     "gb": 6.5
+    },
+    {
+     "rank": 8,
+     "team": "@ShamsCharania",
+     "record": "54-35-1",
+     "pct": 0.606,
+     "gb": 7.0
+    },
+    {
+     "rank": 9,
+     "team": "antswong",
+     "record": "53-36-1",
+     "pct": 0.594,
+     "gb": 8.0
+    },
+    {
+     "rank": 10,
+     "team": "yotamrab8565",
+     "record": "53-37-0",
+     "pct": 0.589,
+     "gb": 8.5
+    },
+    {
+     "rank": 11,
+     "team": "Plant guy Gets Paid",
+     "record": "52-37-1",
+     "pct": 0.583,
+     "gb": 9.0
+    },
+    {
+     "rank": 12,
+     "team": "bowlTeam8",
+     "record": "52-38-0",
+     "pct": 0.578,
+     "gb": 9.5
+    },
+    {
+     "rank": 13,
+     "team": "nikogucci",
+     "record": "51-37-2",
+     "pct": 0.578,
+     "gb": 9.5
+    },
+    {
+     "rank": 14,
+     "team": "CUCKOOKACHA",
+     "record": "51-38-1",
+     "pct": 0.572,
+     "gb": 10.0
+    },
+    {
+     "rank": 14,
+     "team": "Tahini",
+     "record": "51-38-1",
+     "pct": 0.572,
+     "gb": 10.0
+    },
+    {
+     "rank": 16,
+     "team": "b4100552",
+     "record": "50-37-3",
+     "pct": 0.572,
+     "gb": 10.0
+    },
+    {
+     "rank": 16,
+     "team": "DGately",
+     "record": "50-37-3",
+     "pct": 0.572,
+     "gb": 10.0
+    },
+    {
+     "rank": 16,
+     "team": "Tuskanak Lobos",
+     "record": "50-37-3",
+     "pct": 0.572,
+     "gb": 10.0
+    },
+    {
+     "rank": 19,
+     "team": "Baltimore Bullets",
+     "record": "50-38-2",
+     "pct": 0.567,
+     "gb": 10.5
+    },
+    {
+     "rank": 20,
+     "team": "odheelora",
+     "record": "49-37-4",
+     "pct": 0.567,
+     "gb": 10.5
+    },
+    {
+     "rank": 21,
+     "team": "I'mBerning",
+     "record": "50-39-1",
+     "pct": 0.561,
+     "gb": 11.0
+    },
+    {
+     "rank": 22,
+     "team": "Wemby 51",
+     "record": "49-38-3",
+     "pct": 0.561,
+     "gb": 11.0
+    },
+    {
+     "rank": 23,
+     "team": "The Big Bam Theory > lawyersaretops",
+     "record": "50-40-0",
+     "pct": 0.556,
+     "gb": 11.5
+    },
+    {
+     "rank": 24,
+     "team": "Edey Like Sunday Morning",
+     "record": "50-40-0",
+     "pct": 0.556,
+     "gb": 11.5
+    },
+    {
+     "rank": 24,
+     "team": "FantasyISO",
+     "record": "50-40-0",
+     "pct": 0.556,
+     "gb": 11.5
+    },
+    {
+     "rank": 26,
+     "team": "tcam1878",
+     "record": "48-39-3",
+     "pct": 0.55,
+     "gb": 12.0
+    },
+    {
+     "rank": 27,
+     "team": "funkyfrenky",
+     "record": "49-41-0",
+     "pct": 0.544,
+     "gb": 12.5
+    },
+    {
+     "rank": 28,
+     "team": "Channel 4 New Team",
+     "record": "49-41-0",
+     "pct": 0.544,
+     "gb": 12.5
+    },
+    {
+     "rank": 28,
+     "team": "Legendary Blokes",
+     "record": "49-41-0",
+     "pct": 0.544,
+     "gb": 12.5
+    },
+    {
+     "rank": 28,
+     "team": "novathewitcher",
+     "record": "49-41-0",
+     "pct": 0.544,
+     "gb": 12.5
+    },
+    {
+     "rank": 31,
+     "team": "Gala",
+     "record": "48-40-2",
+     "pct": 0.544,
+     "gb": 12.5
+    },
+    {
+     "rank": 32,
+     "team": "Neifator",
+     "record": "48-41-1",
+     "pct": 0.539,
+     "gb": 13.0
+    },
+    {
+     "rank": 32,
+     "team": "tomer17275471",
+     "record": "48-41-1",
+     "pct": 0.539,
+     "gb": 13.0
+    },
+    {
+     "rank": 34,
+     "team": "FT",
+     "record": "47-40-3",
+     "pct": 0.539,
+     "gb": 13.0
+    },
+    {
+     "rank": 35,
+     "team": "tancokralj",
+     "record": "46-40-4",
+     "pct": 0.533,
+     "gb": 13.5
+    },
+    {
+     "rank": 36,
+     "team": "idkman",
+     "record": "48-42-0",
+     "pct": 0.533,
+     "gb": 13.5
+    },
+    {
+     "rank": 37,
+     "team": "The GUARDians",
+     "record": "47-41-2",
+     "pct": 0.533,
+     "gb": 13.5
+    },
+    {
+     "rank": 38,
+     "team": "desTROYed",
+     "record": "46-41-3",
+     "pct": 0.528,
+     "gb": 14.0
+    },
+    {
+     "rank": 39,
+     "team": "billthebadger",
+     "record": "46-41-3",
+     "pct": 0.528,
+     "gb": 14.0
+    },
+    {
+     "rank": 39,
+     "team": "Koumpo Nation",
+     "record": "46-41-3",
+     "pct": 0.528,
+     "gb": 14.0
+    },
+    {
+     "rank": 41,
+     "team": "Heisenball",
+     "record": "47-43-0",
+     "pct": 0.522,
+     "gb": 14.5
+    },
+    {
+     "rank": 41,
+     "team": "Ivanstein",
+     "record": "47-43-0",
+     "pct": 0.522,
+     "gb": 14.5
+    },
+    {
+     "rank": 41,
+     "team": "unc00kedfoam",
+     "record": "47-43-0",
+     "pct": 0.522,
+     "gb": 14.5
+    },
+    {
+     "rank": 44,
+     "team": "\u00d0\u009c\u00d0\u00b8\u00d1\u0081\u00d1\u0082\u00d0\u00b5\u00d1\u0080 \u00d0\u009f\u00d0\u00b5\u00d0\u00bd\u00d0\u00b8\u00d1\u0081",
+     "record": "46-43-1",
+     "pct": 0.517,
+     "gb": 15.0
+    },
+    {
+     "rank": 45,
+     "team": "Ant Edwards Waiting Room",
+     "record": "46-43-1",
+     "pct": 0.517,
+     "gb": 15.0
+    },
+    {
+     "rank": 45,
+     "team": "Dark Knights",
+     "record": "46-43-1",
+     "pct": 0.517,
+     "gb": 15.0
+    },
+    {
+     "rank": 47,
+     "team": "ESTONIA",
+     "record": "46-44-0",
+     "pct": 0.511,
+     "gb": 15.5
+    },
+    {
+     "rank": 48,
+     "team": "dantay",
+     "record": "45-43-2",
+     "pct": 0.511,
+     "gb": 15.5
+    },
+    {
+     "rank": 48,
+     "team": "ravnasty",
+     "record": "45-43-2",
+     "pct": 0.511,
+     "gb": 15.5
+    },
+    {
+     "rank": 50,
+     "team": "In Embiid We Trust",
+     "record": "45-44-1",
+     "pct": 0.506,
+     "gb": 16.0
+    },
+    {
+     "rank": 50,
+     "team": "lfgsd1969",
+     "record": "45-44-1",
+     "pct": 0.506,
+     "gb": 16.0
+    },
+    {
+     "rank": 52,
+     "team": "ProudPapaPlays",
+     "record": "45-45-0",
+     "pct": 0.5,
+     "gb": 16.5
+    },
+    {
+     "rank": 52,
+     "team": "Seaport Celtics JLFB9C3RR3.0 Tatum",
+     "record": "45-45-0",
+     "pct": 0.5,
+     "gb": 16.5
+    },
+    {
+     "rank": 54,
+     "team": "Black Swoosh",
+     "record": "44-44-2",
+     "pct": 0.5,
+     "gb": 16.5
+    },
+    {
+     "rank": 54,
+     "team": "Bright Skins",
+     "record": "44-44-2",
+     "pct": 0.5,
+     "gb": 16.5
+    },
+    {
+     "rank": 56,
+     "team": "masotheaussie",
+     "record": "44-45-1",
+     "pct": 0.494,
+     "gb": 17.0
+    },
+    {
+     "rank": 56,
+     "team": "Oceanman",
+     "record": "44-45-1",
+     "pct": 0.494,
+     "gb": 17.0
+    },
+    {
+     "rank": 58,
+     "team": "venomenom937",
+     "record": "44-46-0",
+     "pct": 0.489,
+     "gb": 17.5
+    },
+    {
+     "rank": 59,
+     "team": "beetleteam6",
+     "record": "42-44-4",
+     "pct": 0.489,
+     "gb": 17.5
+    },
+    {
+     "rank": 60,
+     "team": "thebigreeks",
+     "record": "42-45-3",
+     "pct": 0.483,
+     "gb": 18.0
+    },
+    {
+     "rank": 61,
+     "team": "nuitnuit",
+     "record": "43-47-0",
+     "pct": 0.478,
+     "gb": 18.5
+    },
+    {
+     "rank": 62,
+     "team": "Bedex",
+     "record": "42-46-2",
+     "pct": 0.478,
+     "gb": 18.5
+    },
+    {
+     "rank": 63,
+     "team": "Process",
+     "record": "42-48-0",
+     "pct": 0.467,
+     "gb": 19.5
+    },
+    {
+     "rank": 64,
+     "team": "drifterspence",
+     "record": "41-47-2",
+     "pct": 0.467,
+     "gb": 19.5
+    },
+    {
+     "rank": 64,
+     "team": "just_joking",
+     "record": "41-47-2",
+     "pct": 0.467,
+     "gb": 19.5
+    },
+    {
+     "rank": 64,
+     "team": "micpuc6",
+     "record": "41-47-2",
+     "pct": 0.467,
+     "gb": 19.5
+    },
+    {
+     "rank": 67,
+     "team": "choccy_milk1",
+     "record": "40-49-1",
+     "pct": 0.45,
+     "gb": 21.0
+    },
+    {
+     "rank": 68,
+     "team": "basedsadboys49",
+     "record": "39-48-3",
+     "pct": 0.45,
+     "gb": 21.0
+    },
+    {
+     "rank": 69,
+     "team": ".ditto.",
+     "record": "40-50-0",
+     "pct": 0.444,
+     "gb": 21.5
+    },
+    {
+     "rank": 70,
+     "team": "Bit-alquomista",
+     "record": "39-49-2",
+     "pct": 0.444,
+     "gb": 21.5
+    },
+    {
+     "rank": 71,
+     "team": "DIMAJ",
+     "record": "39-50-1",
+     "pct": 0.439,
+     "gb": 22.0
+    },
+    {
+     "rank": 72,
+     "team": "Sword Saint",
+     "record": "39-50-1",
+     "pct": 0.439,
+     "gb": 22.0
+    },
+    {
+     "rank": 73,
+     "team": "buddycorb",
+     "record": "38-49-3",
+     "pct": 0.439,
+     "gb": 22.0
+    },
+    {
+     "rank": 74,
+     "team": "Brick Squad",
+     "record": "39-50-1",
+     "pct": 0.439,
+     "gb": 22.0
+    },
+    {
+     "rank": 74,
+     "team": "Jaylen Brown-eye Fake Intellectual",
+     "record": "39-50-1",
+     "pct": 0.439,
+     "gb": 22.0
+    },
+    {
+     "rank": 76,
+     "team": "Galactic Imperators",
+     "record": "38-50-2",
+     "pct": 0.433,
+     "gb": 22.5
+    },
+    {
+     "rank": 77,
+     "team": "Wade_County",
+     "record": "39-51-0",
+     "pct": 0.433,
+     "gb": 22.5
+    },
+    {
+     "rank": 78,
+     "team": "mpampis07",
+     "record": "38-51-1",
+     "pct": 0.428,
+     "gb": 23.0
+    },
+    {
+     "rank": 79,
+     "team": "amitayk",
+     "record": "36-51-3",
+     "pct": 0.417,
+     "gb": 24.0
+    },
+    {
+     "rank": 79,
+     "team": "jus.saiyan21",
+     "record": "36-51-3",
+     "pct": 0.417,
+     "gb": 24.0
+    },
+    {
+     "rank": 81,
+     "team": "alexbondar9133",
+     "record": "36-52-2",
+     "pct": 0.411,
+     "gb": 24.5
+    },
+    {
+     "rank": 82,
+     "team": "Bosstrich",
+     "record": "37-53-0",
+     "pct": 0.411,
+     "gb": 24.5
+    },
+    {
+     "rank": 82,
+     "team": "Dutch Masters",
+     "record": "37-53-0",
+     "pct": 0.411,
+     "gb": 24.5
+    },
+    {
+     "rank": 82,
+     "team": "Old No.7",
+     "record": "37-53-0",
+     "pct": 0.411,
+     "gb": 24.5
+    },
+    {
+     "rank": 85,
+     "team": "Sepulll",
+     "record": "35-53-2",
+     "pct": 0.4,
+     "gb": 25.5
+    },
+    {
+     "rank": 86,
+     "team": "mreclectico",
+     "record": "34-53-3",
+     "pct": 0.394,
+     "gb": 26.0
+    },
+    {
+     "rank": 87,
+     "team": "jmroblesjr",
+     "record": "35-54-1",
+     "pct": 0.394,
+     "gb": 26.0
+    },
+    {
+     "rank": 88,
+     "team": "oldsteph.",
+     "record": "34-54-2",
+     "pct": 0.389,
+     "gb": 26.5
+    },
+    {
+     "rank": 89,
+     "team": "Cam56",
+     "record": "34-55-1",
+     "pct": 0.383,
+     "gb": 27.0
+    },
+    {
+     "rank": 90,
+     "team": "mark58sydney",
+     "record": "34-56-0",
+     "pct": 0.378,
+     "gb": 27.5
+    },
+    {
+     "rank": 91,
+     "team": "buzule1503",
+     "record": "32-57-1",
+     "pct": 0.361,
+     "gb": 29.0
+    },
+    {
+     "rank": 91,
+     "team": "gtaylor38",
+     "record": "32-57-1",
+     "pct": 0.361,
+     "gb": 29.0
+    },
+    {
+     "rank": 91,
+     "team": "slimetimelive7",
+     "record": "32-57-1",
+     "pct": 0.361,
+     "gb": 29.0
+    },
+    {
+     "rank": 94,
+     "team": "Grumpyman",
+     "record": "31-57-2",
+     "pct": 0.356,
+     "gb": 29.5
+    },
+    {
+     "rank": 95,
+     "team": "dr_jones0402",
+     "record": "29-59-2",
+     "pct": 0.333,
+     "gb": 31.5
+    },
+    {
+     "rank": 96,
+     "team": "Boy Don't Lie",
+     "record": "28-61-1",
+     "pct": 0.317,
+     "gb": 33.0
+    }
+   ]
+  }
+ },
+ "forecast": {
+  "hrh": {
+   "captured": "2026-11-23",
+   "punts": [
+    "FT%",
+    "REB",
+    "AST"
+   ],
+   "opponents": {
+    "Chaewon Stan": {
+     "p_win": 0.9056
+    }
+   }
+  },
+  "jlfb": {
+   "captured": "2026-11-23",
+   "punts": [
+    "FG%",
+    "FT%",
+    "PTS"
+   ],
+   "opponents": {
+    "Brick Squad": {
+     "p_win": 0.8402
+    },
+    "Black Swoosh": {
+     "p_win": 0.3026
+    }
+   }
+  }
+ },
+ "insights": {
+  "hrh": {
+   "league": "hrh",
+   "team": "Ankle Breakers",
+   "period": 6,
+   "through": "2026-11-25",
+   "punts": [],
+   "generated": "2026-11-25",
+   "baseline": {
+    "p_win": 0.5849,
+    "mean_wins": 4.6799,
+    "categories": {
+     "FG%": {
+      "p_win": 0.55695,
+      "you": 0.4516752325049481,
+      "them": 0.4450298529290215
+     },
+     "FT%": {
+      "p_win": 0.60675,
+      "you": 0.8169758969672655,
+      "them": 0.7897686290551894
+     },
+     "3PM": {
+      "p_win": 0.86895,
+      "you": 68.20405719886506,
+      "them": 62.39428951143802
+     },
+     "PTS": {
+      "p_win": 0.94775,
+      "you": 570.4157037481522,
+      "them": 501.2664034084067
+     },
+     "REB": {
+      "p_win": 0.0753,
+      "you": 154.19514283509955,
+      "them": 173.50417004599086
+     },
+     "AST": {
+      "p_win": 0.99975,
+      "you": 143.43567832395937,
+      "them": 110.01255897626486
+     },
+     "STL": {
+      "p_win": 0.5713,
+      "you": 32.53008206402749,
+      "them": 32.09910251442257
+     },
+     "BLK": {
+      "p_win": 0.0,
+      "you": 13.658189308125747,
+      "them": 26.883297413285362
+     },
+     "TO": {
+      "p_win": 0.05315,
+      "you": 65.39448123267448,
+      "them": 57.78141562049203
+     }
+    },
+    "plan": {
+     "Keegan Murray": 1,
+     "Darius Garland": 2,
+     "Derrick White": 2,
+     "Collin Gillespie": 2,
+     "Saddiq Bey": 2,
+     "Trey Murphy III": 2,
+     "Nickeil Alexander-Walker": 2,
+     "Derik Queen": 2,
+     "Tyrese Maxey": 2,
+     "Daniss Jenkins": 2,
+     "Franz Wagner": 2,
+     "Tristan da Silva": 1
+    },
+    "cap": 22
+   },
+   "availability": [
+    {
+     "player": "Dylan Harper",
+     "status": "Out",
+     "note": "Harper (hip) is expected to miss two to three weeks, Brett Siegel of ClutchPoints.com reports.",
+     "window": "Out all remaining days",
+     "days_out": [
+      "2026-11-25",
+      "2026-11-27",
+      "2026-11-28",
+      "2026-11-29"
+     ],
+     "tone": "bad",
+     "mine": true,
+     "team": "Ankle Breakers"
+    },
+    {
+     "player": "Evan Mobley",
+     "status": "Out",
+     "note": "Mobley will receive treatment and participate in rehab after the team confirmed a diagnosis of a right great toe sprain, and he'll be re-evaluated in the next 7-to-10 days.",
+     "window": "Out all remaining days",
+     "days_out": [
+      "2026-11-25",
+      "2026-11-27",
+      "2026-11-28",
+      "2026-11-29"
+     ],
+     "tone": "bad",
+     "mine": true,
+     "team": "Ankle Breakers"
+    },
+    {
+     "player": "Cameron Boozer",
+     "status": "Out",
+     "note": "Boozer (ankle) will be re-evaluated in four weeks, Brett Siegel of ClutchPoints.com reports.",
+     "window": "Out all remaining days",
+     "days_out": [
+      "2026-11-25",
+      "2026-11-27",
+      "2026-11-28",
+      "2026-11-29"
+     ],
+     "tone": "bad",
+     "mine": false,
+     "team": "Chaewon Stan"
+    },
+    {
+     "player": "Victor Wembanyama",
+     "status": "Day-To-Day",
+     "note": "Wembanyama (back) is questionable for Wednesday's game in Portland.",
+     "window": "Available all remaining days",
+     "days_out": [],
+     "tone": "warn",
+     "mine": false,
+     "team": "Chaewon Stan"
+    }
+   ],
+   "move": {
+    "add": "Alex Caruso",
+    "team": "OKC",
+    "positions": [
+     "PG",
+     "SF",
+     "SG"
+    ],
+    "games": 2,
+    "p_win": 0.64705,
+    "delta": 0.06215000000000004,
+    "mean_wins": 4.82425,
+    "categories": [
+     {
+      "cat": "FG%",
+      "before": 0.55695,
+      "after": 0.54335,
+      "delta": -0.013599999999999945,
+      "you_before": 0.4516752325049481,
+      "you_after": 0.45024260006126043,
+      "them": 0.4450298529290215
+     },
+     {
+      "cat": "FT%",
+      "before": 0.60675,
+      "after": 0.62075,
+      "delta": 0.014000000000000012,
+      "you_before": 0.8169758969672655,
+      "you_after": 0.8205412813484556,
+      "them": 0.7897686290551894
+     },
+     {
+      "cat": "3PM",
+      "before": 0.86895,
+      "after": 0.8993,
+      "delta": 0.030349999999999988,
+      "you_before": 68.20405719886506,
+      "you_after": 69.05317712628533,
+      "them": 62.39428951143802
+     },
+     {
+      "cat": "PTS",
+      "before": 0.94775,
+      "after": 0.94015,
+      "delta": -0.00759999999999994,
+      "you_before": 570.4157037481522,
+      "you_after": 567.5622495759683,
+      "them": 501.2664034084067
+     },
+     {
+      "cat": "REB",
+      "before": 0.0753,
+      "after": 0.0395,
+      "delta": -0.035800000000000005,
+      "you_before": 154.19514283509955,
+      "you_after": 150.26095598781285,
+      "them": 173.50417004599086
+     },
+     {
+      "cat": "AST",
+      "before": 0.99975,
+      "after": 0.9998,
+      "delta": 4.999999999999449e-05,
+      "you_before": 143.43567832395937,
+      "you_after": 143.489411325158,
+      "them": 110.01255897626486
+     },
+     {
+      "cat": "STL",
+      "before": 0.5713,
+      "after": 0.71185,
+      "delta": 0.14054999999999995,
+      "you_before": 32.53008206402749,
+      "you_after": 33.53278859916841,
+      "them": 32.09910251442257
+     },
+     {
+      "cat": "BLK",
+      "before": 0.0,
+      "after": 0.0,
+      "delta": 0.0,
+      "you_before": 13.658189308125747,
+      "you_after": 13.262811757370534,
+      "them": 26.883297413285362
+     },
+     {
+      "cat": "TO",
+      "before": 0.05315,
+      "after": 0.06955,
+      "delta": 0.016399999999999998,
+      "you_before": 65.39448123267448,
+      "you_after": 64.70323487479575,
+      "them": 57.78141562049203
+     }
+    ],
+    "reason": "adds STL and FT%; costs FG%; 2 games left",
+    "drop": "Kris Dunn",
+    "drop_games": 0,
+    "drop_reason": "not in the remaining lineup plan",
+    "p_win_before": 0.5849,
+    "p_win_after": 0.64705,
+    "mean_wins_before": 4.6799,
+    "p_win_drop_only": 0.58865,
+    "note": ""
+   },
+   "alternatives": [
+    {
+     "add": "Caleb Martin",
+     "team": "DAL",
+     "positions": [
+      "SF"
+     ],
+     "games": 1,
+     "p_win": 0.6189,
+     "delta": 0.03400000000000003,
+     "mean_wins": 4.76685,
+     "reason": "adds STL and FG%; costs FT%; 1 game left"
+    },
+    {
+     "add": "Jalen Williams",
+     "team": "OKC",
+     "positions": [
+      "PF",
+      "SF",
+      "SG"
+     ],
+     "games": 2,
+     "p_win": 0.61715,
+     "delta": 0.03225,
+     "mean_wins": 4.75635,
+     "reason": "adds STL; 2 games left"
+    },
+    {
+     "add": "Buddy Hield",
+     "team": "CHI",
+     "positions": [
+      "PG",
+      "SF",
+      "SG"
+     ],
+     "games": 2,
+     "p_win": 0.6164,
+     "delta": 0.03149999999999997,
+     "mean_wins": 4.76405,
+     "reason": "adds 3PM and STL; 2 games left"
+    },
+    {
+     "add": "Will Richard",
+     "team": "GS",
+     "positions": [
+      "SG"
+     ],
+     "games": 3,
+     "p_win": 0.58865,
+     "delta": 0.003750000000000031,
+     "mean_wins": 4.68505,
+     "reason": "adds STL and FT%; 3 games left"
+    }
+   ],
+   "swings": [
+    {
+     "cat": "FG%",
+     "before": 0.55695,
+     "after": 0.54335,
+     "delta": -0.013599999999999945,
+     "you_before": 0.4516752325049481,
+     "you_after": 0.45024260006126043,
+     "them": 0.4450298529290215,
+     "leverage": 0.8861000000000001
+    },
+    {
+     "cat": "STL",
+     "before": 0.5713,
+     "after": 0.71185,
+     "delta": 0.14054999999999995,
+     "you_before": 32.53008206402749,
+     "you_after": 33.53278859916841,
+     "them": 32.09910251442257,
+     "leverage": 0.8573999999999999
+    },
+    {
+     "cat": "FT%",
+     "before": 0.60675,
+     "after": 0.62075,
+     "delta": 0.014000000000000012,
+     "you_before": 0.8169758969672655,
+     "you_after": 0.8205412813484556,
+     "them": 0.7897686290551894,
+     "leverage": 0.7865
+    },
+    {
+     "cat": "3PM",
+     "before": 0.86895,
+     "after": 0.8993,
+     "delta": 0.030349999999999988,
+     "you_before": 68.20405719886506,
+     "you_after": 69.05317712628533,
+     "them": 62.39428951143802,
+     "leverage": 0.2621
+    },
+    {
+     "cat": "REB",
+     "before": 0.0753,
+     "after": 0.0395,
+     "delta": -0.035800000000000005,
+     "you_before": 154.19514283509955,
+     "you_after": 150.26095598781285,
+     "them": 173.50417004599086,
+     "leverage": 0.15060000000000007
+    }
+   ],
+   "focus": [
+    {
+     "cat": "3PM",
+     "before": 0.86895,
+     "after": 0.8993,
+     "delta": 0.030349999999999988,
+     "you_before": 68.20405719886506,
+     "you_after": 69.05317712628533,
+     "them": 62.39428951143802
+    },
+    {
+     "cat": "FT%",
+     "before": 0.60675,
+     "after": 0.62075,
+     "delta": 0.014000000000000012,
+     "you_before": 0.8169758969672655,
+     "you_after": 0.8205412813484556,
+     "them": 0.7897686290551894
+    },
+    {
+     "cat": "TO",
+     "before": 0.05315,
+     "after": 0.06955,
+     "delta": 0.016399999999999998,
+     "you_before": 65.39448123267448,
+     "you_after": 64.70323487479575,
+     "them": 57.78141562049203
+    }
+   ]
+  },
+  "jlfb": {
+   "league": "jlfb",
+   "team": "micpuc6",
+   "period": 6,
+   "through": "2026-11-25",
+   "punts": [
+    "FG%",
+    "3PM"
+   ],
+   "generated": "2026-11-25",
+   "baseline": {
+    "p_win": 0.603675,
+    "mean_wins": 4.695774999999999,
+    "categories": {
+     "FG%": {
+      "p_win": 0.3029,
+      "you": 0.46436391427775214,
+      "them": 0.4877684382444343
+     },
+     "FT%": {
+      "p_win": 0.5543,
+      "you": 0.7884620730452782,
+      "them": 0.776374835583524
+     },
+     "3PM": {
+      "p_win": 0.9994000000000001,
+      "you": 80.51453395759836,
+      "them": 60.253480546208934
+     },
+     "PTS": {
+      "p_win": 0.75455,
+      "you": 630.272229119008,
+      "them": 568.5246678472757
+     },
+     "REB": {
+      "p_win": 0.31795,
+      "you": 201.45978952455772,
+      "them": 210.48478696145912
+     },
+     "AST": {
+      "p_win": 0.11085,
+      "you": 122.46240129544577,
+      "them": 133.747551031412
+     },
+     "STL": {
+      "p_win": 0.769925,
+      "you": 40.35764211721372,
+      "them": 35.70657562728112
+     },
+     "BLK": {
+      "p_win": 0.8346,
+      "you": 29.29825920242055,
+      "them": 26.921956633879763
+     },
+     "TO": {
+      "p_win": 0.051300000000000005,
+      "you": 70.6799669408735,
+      "them": 62.33287115108827
+     }
+    },
+    "plan": {
+     "Tyrese Maxey": 2,
+     "Saddiq Bey": 2,
+     "Aaron Nesmith": 2,
+     "P.J. Washington Jr.": 1,
+     "Paul George": 2,
+     "Trey Murphy III": 2,
+     "Derik Queen": 2,
+     "Myles Turner": 2,
+     "Desmond Bane": 2,
+     "Kyshawn George": 1,
+     "Naz Reid": 1,
+     "Aday Mara": 1,
+     "Donovan Mitchell": 1,
+     "Peyton Watson": 1
+    },
+    "cap": 22
+   },
+   "availability": [
+    {
+     "player": "Aaron Nesmith",
+     "status": "Day-To-Day",
+     "note": "Nesmith is out for Monday's game against the Thunder due to right foot soreness.",
+     "window": "Available all remaining days",
+     "days_out": [],
+     "tone": "warn",
+     "mine": true,
+     "team": "micpuc6"
+    },
+    {
+     "player": "Aday Mara",
+     "status": "Out",
+     "note": "Mara (leg) is out for Wednesday's game versus the Timberwolves.",
+     "window": "Out Wed",
+     "days_out": [
+      "2026-11-25"
+     ],
+     "tone": "warn",
+     "mine": true,
+     "team": "micpuc6"
+    },
+    {
+     "player": "CJ McCollum",
+     "status": "Out",
+     "note": "McCollum (calf) will miss at least four weeks, per Brad Rowland of the Locked On Podcast Network.",
+     "window": "Out all remaining days",
+     "days_out": [
+      "2026-11-25",
+      "2026-11-27",
+      "2026-11-28",
+      "2026-11-29"
+     ],
+     "tone": "bad",
+     "mine": false,
+     "team": "Brick Squad"
+    },
+    {
+     "player": "Mark Williams",
+     "status": "Out",
+     "note": "Williams underwent surgery Thursday to repair a torn labrum in his left shoulder and will miss an extended period of time, Shams Charania of ESPN reports.",
+     "window": "Out all remaining days",
+     "days_out": [
+      "2026-11-25",
+      "2026-11-27",
+      "2026-11-28",
+      "2026-11-29"
+     ],
+     "tone": "bad",
+     "mine": false,
+     "team": "Brick Squad"
+    },
+    {
+     "player": "Maxime Raynaud",
+     "status": "Out",
+     "note": "Raynaud (knee) was recalled from the G League's Stockton Kings on Wednesday, Marc J. Spears of ESPN.com reports.",
+     "window": "Out all remaining days",
+     "days_out": [
+      "2026-11-25",
+      "2026-11-27",
+      "2026-11-28",
+      "2026-11-29"
+     ],
+     "tone": "bad",
+     "mine": false,
+     "team": "Brick Squad"
+    },
+    {
+     "player": "Tyrese Haliburton",
+     "status": "Out",
+     "note": "Haliburton (hamstring) was recalled from the G League's Noblesville Boom on Tuesday, Tony East of Forbes.com reports.",
+     "window": "Out all remaining days",
+     "days_out": [
+      "2026-11-25",
+      "2026-11-27",
+      "2026-11-28",
+      "2026-11-29"
+     ],
+     "tone": "bad",
+     "mine": false,
+     "team": "Brick Squad"
+    },
+    {
+     "player": "De'Aaron Fox",
+     "status": "Day-To-Day",
+     "note": "Fox (shin) is questionable to play Wednesday's game against the Trail Blazers.",
+     "window": "Available all remaining days",
+     "days_out": [],
+     "tone": "warn",
+     "mine": false,
+     "team": "Brick Squad"
+    },
+    {
+     "player": "Dejounte Murray",
+     "status": "Out",
+     "note": "Murray (ankle) is out for Friday's game against Memphis.",
+     "window": "Out Fri",
+     "days_out": [
+      "2026-11-27"
+     ],
+     "tone": "warn",
+     "mine": false,
+     "team": "Brick Squad"
+    },
+    {
+     "player": "Austin Reaves",
+     "status": "Out",
+     "note": "Reaves (heel) was a full participant in Wednesday's practice, Daniel Starkand of LakersNation.com reports.",
+     "window": "Out all remaining days",
+     "days_out": [
+      "2026-11-25",
+      "2026-11-27",
+      "2026-11-28",
+      "2026-11-29"
+     ],
+     "tone": "bad",
+     "mine": false,
+     "team": "Black Swoosh"
+    }
+   ],
+   "move": null,
+   "alternatives": [],
+   "swings": [
+    {
+     "cat": "FT%",
+     "before": 0.5543,
+     "after": 0.5543,
+     "delta": 0.0,
+     "you_before": 0.7884620730452782,
+     "you_after": 0.7884620730452782,
+     "them": 0.776374835583524,
+     "leverage": 0.8914
+    },
+    {
+     "cat": "REB",
+     "before": 0.31795,
+     "after": 0.31795,
+     "delta": 0.0,
+     "you_before": 201.45978952455772,
+     "you_after": 201.45978952455772,
+     "them": 210.48478696145912,
+     "leverage": 0.6359
+    },
+    {
+     "cat": "FG%",
+     "before": 0.3029,
+     "after": 0.3029,
+     "delta": 0.0,
+     "you_before": 0.46436391427775214,
+     "you_after": 0.46436391427775214,
+     "them": 0.4877684382444343,
+     "leverage": 0.6058
+    },
+    {
+     "cat": "PTS",
+     "before": 0.75455,
+     "after": 0.75455,
+     "delta": 0.0,
+     "you_before": 630.272229119008,
+     "you_after": 630.272229119008,
+     "them": 568.5246678472757,
+     "leverage": 0.4908999999999999
+    },
+    {
+     "cat": "STL",
+     "before": 0.769925,
+     "after": 0.769925,
+     "delta": 0.0,
+     "you_before": 40.35764211721372,
+     "you_after": 40.35764211721372,
+     "them": 35.70657562728112,
+     "leverage": 0.46015000000000006
+    }
+   ],
+   "note": "Waiver simulation is HRH-only; availability and swings are live."
+  }
+ },
+ "report": "data/reports/brief-2026-11-25-2046.md",
+ "report_name": "brief-2026-11-25-2046.md"
+}

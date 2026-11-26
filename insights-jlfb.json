@@ -1,0 +1,255 @@
+{
+ "league": "jlfb",
+ "team": "micpuc6",
+ "period": 6,
+ "through": "2026-11-25",
+ "punts": [
+  "FG%",
+  "3PM"
+ ],
+ "generated": "2026-11-25",
+ "baseline": {
+  "p_win": 0.603675,
+  "mean_wins": 4.695774999999999,
+  "categories": {
+   "FG%": {
+    "p_win": 0.3029,
+    "you": 0.46436391427775214,
+    "them": 0.4877684382444343
+   },
+   "FT%": {
+    "p_win": 0.5543,
+    "you": 0.7884620730452782,
+    "them": 0.776374835583524
+   },
+   "3PM": {
+    "p_win": 0.9994000000000001,
+    "you": 80.51453395759836,
+    "them": 60.253480546208934
+   },
+   "PTS": {
+    "p_win": 0.75455,
+    "you": 630.272229119008,
+    "them": 568.5246678472757
+   },
+   "REB": {
+    "p_win": 0.31795,
+    "you": 201.45978952455772,
+    "them": 210.48478696145912
+   },
+   "AST": {
+    "p_win": 0.11085,
+    "you": 122.46240129544577,
+    "them": 133.747551031412
+   },
+   "STL": {
+    "p_win": 0.769925,
+    "you": 40.35764211721372,
+    "them": 35.70657562728112
+   },
+   "BLK": {
+    "p_win": 0.8346,
+    "you": 29.29825920242055,
+    "them": 26.921956633879763
+   },
+   "TO": {
+    "p_win": 0.051300000000000005,
+    "you": 70.6799669408735,
+    "them": 62.33287115108827
+   }
+  },
+  "plan": {
+   "Tyrese Maxey": 2,
+   "Saddiq Bey": 2,
+   "Aaron Nesmith": 2,
+   "P.J. Washington Jr.": 1,
+   "Paul George": 2,
+   "Trey Murphy III": 2,
+   "Derik Queen": 2,
+   "Myles Turner": 2,
+   "Desmond Bane": 2,
+   "Kyshawn George": 1,
+   "Naz Reid": 1,
+   "Aday Mara": 1,
+   "Donovan Mitchell": 1,
+   "Peyton Watson": 1
+  },
+  "cap": 22
+ },
+ "availability": [
+  {
+   "player": "Aaron Nesmith",
+   "status": "Day-To-Day",
+   "note": "Nesmith is out for Monday's game against the Thunder due to right foot soreness.",
+   "window": "Available all remaining days",
+   "days_out": [],
+   "tone": "warn",
+   "mine": true,
+   "team": "micpuc6"
+  },
+  {
+   "player": "Aday Mara",
+   "status": "Out",
+   "note": "Mara (leg) is out for Wednesday's game versus the Timberwolves.",
+   "window": "Out Wed",
+   "days_out": [
+    "2026-11-25"
+   ],
+   "tone": "warn",
+   "mine": true,
+   "team": "micpuc6"
+  },
+  {
+   "player": "CJ McCollum",
+   "status": "Out",
+   "note": "McCollum (calf) will miss at least four weeks, per Brad Rowland of the Locked On Podcast Network.",
+   "window": "Out all remaining days",
+   "days_out": [
+    "2026-11-25",
+    "2026-11-27",
+    "2026-11-28",
+    "2026-11-29"
+   ],
+   "tone": "bad",
+   "mine": false,
+   "team": "Brick Squad"
+  },
+  {
+   "player": "Mark Williams",
+   "status": "Out",
+   "note": "Williams underwent surgery Thursday to repair a torn labrum in his left shoulder and will miss an extended period of time, Shams Charania of ESPN reports.",
+   "window": "Out all remaining days",
+   "days_out": [
+    "2026-11-25",
+    "2026-11-27",
+    "2026-11-28",
+    "2026-11-29"
+   ],
+   "tone": "bad",
+   "mine": false,
+   "team": "Brick Squad"
+  },
+  {
+   "player": "Maxime Raynaud",
+   "status": "Out",
+   "note": "Raynaud (knee) was recalled from the G League's Stockton Kings on Wednesday, Marc J. Spears of ESPN.com reports.",
+   "window": "Out all remaining days",
+   "days_out": [
+    "2026-11-25",
+    "2026-11-27",
+    "2026-11-28",
+    "2026-11-29"
+   ],
+   "tone": "bad",
+   "mine": false,
+   "team": "Brick Squad"
+  },
+  {
+   "player": "Tyrese Haliburton",
+   "status": "Out",
+   "note": "Haliburton (hamstring) was recalled from the G League's Noblesville Boom on Tuesday, Tony East of Forbes.com reports.",
+   "window": "Out all remaining days",
+   "days_out": [
+    "2026-11-25",
+    "2026-11-27",
+    "2026-11-28",
+    "2026-11-29"
+   ],
+   "tone": "bad",
+   "mine": false,
+   "team": "Brick Squad"
+  },
+  {
+   "player": "De'Aaron Fox",
+   "status": "Day-To-Day",
+   "note": "Fox (shin) is questionable to play Wednesday's game against the Trail Blazers.",
+   "window": "Available all remaining days",
+   "days_out": [],
+   "tone": "warn",
+   "mine": false,
+   "team": "Brick Squad"
+  },
+  {
+   "player": "Dejounte Murray",
+   "status": "Out",
+   "note": "Murray (ankle) is out for Friday's game against Memphis.",
+   "window": "Out Fri",
+   "days_out": [
+    "2026-11-27"
+   ],
+   "tone": "warn",
+   "mine": false,
+   "team": "Brick Squad"
+  },
+  {
+   "player": "Austin Reaves",
+   "status": "Out",
+   "note": "Reaves (heel) was a full participant in Wednesday's practice, Daniel Starkand of LakersNation.com reports.",
+   "window": "Out all remaining days",
+   "days_out": [
+    "2026-11-25",
+    "2026-11-27",
+    "2026-11-28",
+    "2026-11-29"
+   ],
+   "tone": "bad",
+   "mine": false,
+   "team": "Black Swoosh"
+  }
+ ],
+ "move": null,
+ "alternatives": [],
+ "swings": [
+  {
+   "cat": "FT%",
+   "before": 0.5543,
+   "after": 0.5543,
+   "delta": 0.0,
+   "you_before": 0.7884620730452782,
+   "you_after": 0.7884620730452782,
+   "them": 0.776374835583524,
+   "leverage": 0.8914
+  },
+  {
+   "cat": "REB",
+   "before": 0.31795,
+   "after": 0.31795,
+   "delta": 0.0,
+   "you_before": 201.45978952455772,
+   "you_after": 201.45978952455772,
+   "them": 210.48478696145912,
+   "leverage": 0.6359
+  },
+  {
+   "cat": "FG%",
+   "before": 0.3029,
+   "after": 0.3029,
+   "delta": 0.0,
+   "you_before": 0.46436391427775214,
+   "you_after": 0.46436391427775214,
+   "them": 0.4877684382444343,
+   "leverage": 0.6058
+  },
+  {
+   "cat": "PTS",
+   "before": 0.75455,
+   "after": 0.75455,
+   "delta": 0.0,
+   "you_before": 630.272229119008,
+   "you_after": 630.272229119008,
+   "them": 568.5246678472757,
+   "leverage": 0.4908999999999999
+  },
+  {
+   "cat": "STL",
+   "before": 0.769925,
+   "after": 0.769925,
+   "delta": 0.0,
+   "you_before": 40.35764211721372,
+   "you_after": 40.35764211721372,
+   "them": 35.70657562728112,
+   "leverage": 0.46015000000000006
+  }
+ ],
+ "note": "Waiver simulation is HRH-only; availability and swings are live."
+}

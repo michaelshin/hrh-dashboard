@@ -1,0 +1,405 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="theme-color" content="#0a0c10" media="(prefers-color-scheme: dark)"><meta name="theme-color" content="#f3f5f9" media="(prefers-color-scheme: light)"><title>High-Roller Hoops — Daily brief</title><style>
+:root {
+  color-scheme: dark light;
+  --bg: #0a0c10;
+  --bg-soft: #0f1319;
+  --card: #141922;
+  --card-2: #1a202b;
+  --line: #26303d;
+  --line-soft: #1e2632;
+  --text: #eef2f8;
+  --muted: #a5b1c2;
+  --faint: #7c8899;
+  --accent: #f97316;
+  --accent-soft: rgba(249, 115, 22, .14);
+  --good: #34d399;
+  --good-soft: rgba(52, 211, 153, .14);
+  --bad: #f87171;
+  --bad-soft: rgba(248, 113, 113, .14);
+  --warn: #fbbf24;
+  --warn-soft: rgba(251, 191, 36, .14);
+  --blue: #60a5fa;
+  --blue-soft: rgba(96, 165, 250, .12);
+  --radius: 18px;
+  --shadow: 0 12px 32px rgba(0, 0, 0, .28);
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: #f3f5f9;
+    --bg-soft: #eef1f6;
+    --card: #ffffff;
+    --card-2: #f7f9fc;
+    --line: #d8e0ea;
+    --line-soft: #e8edf4;
+    --text: #101828;
+    --muted: #475467;
+    --faint: #667085;
+    --accent: #ea580c;
+    --accent-soft: rgba(234, 88, 12, .10);
+    --good: #047857;
+    --good-soft: rgba(4, 120, 87, .10);
+    --bad: #b42318;
+    --bad-soft: rgba(180, 35, 24, .10);
+    --warn: #b45309;
+    --warn-soft: rgba(180, 83, 9, .12);
+    --blue: #1d4ed8;
+    --blue-soft: rgba(29, 78, 216, .08);
+    --shadow: 0 1px 2px rgba(16, 24, 40, .06);
+  }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 16px/1.55 Inter, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  text-rendering: optimizeLegibility;
+}
+::selection { background: var(--accent-soft); }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 6px; }
+a { color: inherit; }
+.sr-only {
+  position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0;
+}
+.top {
+  max-width: 1240px; margin: 0 auto;
+  padding: clamp(22px, 4vw, 38px) clamp(16px, 3vw, 28px) 20px;
+  display: flex; align-items: flex-end; justify-content: space-between;
+  gap: 18px; flex-wrap: wrap;
+}
+.brand { min-width: 0; }
+h1 {
+  margin: 0; font-size: clamp(1.7rem, 3.4vw, 2.35rem); line-height: 1.1;
+  letter-spacing: -0.035em; text-wrap: balance;
+}
+.sub { margin: 8px 0 0; color: var(--muted); font-size: clamp(.94rem, 1.4vw, 1.02rem); }
+.meta { margin: 5px 0 0; color: var(--faint); font-size: .82rem; }
+.report {
+  display: inline-flex; align-items: center; gap: 8px; min-height: 44px;
+  padding: 0 16px; border: 1px solid var(--line); border-radius: 999px;
+  background: var(--card); color: var(--text); text-decoration: none;
+  font-size: .88rem; font-weight: 650; white-space: nowrap;
+}
+.report:hover { border-color: var(--accent); color: var(--accent); }
+main { max-width: 1240px; margin: 0 auto; padding: 0 clamp(16px, 3vw, 28px) 56px; }
+.legend { max-width: 74ch; margin: 0 0 18px; color: var(--muted); font-size: .86rem; }
+.leagues {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 380px), 1fr));
+  align-items: start;
+  gap: 18px;
+}
+.card {
+  background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+  padding: clamp(16px, 2.2vw, 22px); box-shadow: var(--shadow);
+}
+.card-head {
+  display: flex; align-items: flex-start; justify-content: space-between; gap: 12px;
+}
+h2 {
+  margin: 0; font-size: clamp(1.15rem, 1.8vw, 1.35rem); letter-spacing: -0.02em;
+  line-height: 1.25; text-wrap: balance;
+}
+.card-sub { margin: 4px 0 0; color: var(--faint); font-size: .8rem; }
+.badges {
+  display: flex; align-items: center; gap: 6px; flex-wrap: wrap;
+  justify-content: flex-end;
+}
+.league-chip, .period {
+  border-radius: 999px; padding: 4px 10px; font-size: .72rem; font-weight: 700;
+  letter-spacing: .04em; white-space: nowrap;
+}
+.league-chip { background: var(--accent-soft); color: var(--accent); }
+.league-jlfb .league-chip { background: var(--blue-soft); color: var(--blue); }
+.period { background: var(--bg-soft); color: var(--muted); }
+.live { display: grid; gap: 6px; margin: 14px 0 2px; }
+.live-row {
+  display: flex; align-items: baseline; gap: 4px 12px; flex-wrap: wrap; font-size: .95rem;
+}
+.opponent { font-weight: 650; }
+.record { font-size: 1.08rem; letter-spacing: -0.01em; }
+.live-row .muted { font-size: .82rem; }
+.odds-grid {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 10px; margin-top: 12px;
+}
+.odds {
+  background: var(--card-2); border: 1px solid var(--line-soft);
+  border-radius: 14px; padding: 12px 14px;
+}
+.odds-label {
+  margin: 0; color: var(--faint); font-size: .7rem; font-weight: 650;
+  letter-spacing: .07em; text-transform: uppercase;
+}
+.odds-head {
+  display: flex; align-items: baseline; justify-content: space-between; gap: 10px;
+  margin-top: 3px;
+}
+.odds-head span { font-size: .9rem; font-weight: 600; }
+.odds-head strong {
+  font-size: clamp(1.5rem, 2.6vw, 1.85rem); line-height: 1;
+  letter-spacing: -0.03em; font-variant-numeric: tabular-nums;
+}
+.fav { color: var(--good); }
+.dog { color: var(--bad); }
+.odds p { margin: 7px 0 0; font-size: .8rem; }
+.meter {
+  height: 8px; background: var(--line); border-radius: 999px; overflow: hidden;
+  margin-top: 8px;
+}
+.meter span { display: block; height: 100%; border-radius: 999px; }
+.good { background: var(--good); }
+.bad { background: var(--bad); }
+.cap {
+  display: grid; grid-template-columns: 1fr auto; align-items: baseline;
+  gap: 6px 12px; margin-top: 16px;
+}
+.cap-label { color: var(--muted); font-size: .82rem; }
+.cap strong { font-size: 1rem; font-variant-numeric: tabular-nums; }
+.cap .meter { grid-column: 1 / -1; }
+.cap strong.over { color: var(--bad); }
+.cap strong.warn { color: var(--warn); }
+.problem { grid-column: 1 / -1; margin: 4px 0 0; color: var(--bad); font-size: .82rem; }
+.forecast {
+  display: flex; flex-wrap: wrap; gap: 4px 10px; margin-top: 14px;
+  padding: 10px 12px; border: 1px solid var(--line-soft); border-radius: 12px;
+  background: var(--bg-soft); font-size: .83rem; color: var(--muted);
+}
+.model-note { margin: 8px 0 0; color: var(--faint); font-size: .78rem; }
+.forecast-label { color: var(--faint); font-weight: 650; }
+.insight-card { border-color: var(--accent); }
+.insight-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr));
+  align-items: start;
+  gap: 14px;
+  margin-top: 14px;
+}
+.insight-block {
+  background: var(--card-2); border: 1px solid var(--line-soft);
+  border-radius: 14px; padding: 14px;
+}
+.league-jlfb.insight-block { border-color: var(--blue-soft); }
+.insight-head {
+  display: flex; align-items: flex-start; justify-content: space-between;
+  gap: 10px; margin-bottom: 10px;
+}
+.insight-head h3 {
+  margin: 0; font-size: 1rem; letter-spacing: -0.01em; line-height: 1.25;
+}
+.eyebrow {
+  margin: 0 0 4px; color: var(--faint); font-size: .68rem; font-weight: 650;
+  letter-spacing: .07em; text-transform: uppercase;
+}
+.move-line {
+  display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 10px;
+  font-size: 1.02rem; font-weight: 650; overflow-wrap: anywhere;
+}
+.move-line .add { color: var(--good); }
+.move-line .drop {
+  color: var(--bad); text-decoration: line-through; text-decoration-thickness: 1px;
+}
+.move-line .arrow { color: var(--faint); font-weight: 400; }
+.prob-line {
+  display: flex; flex-wrap: wrap; align-items: baseline; gap: 8px;
+  margin-top: 8px; font-variant-numeric: tabular-nums;
+}
+.prob-line .arrow { color: var(--faint); }
+.prob-before { color: var(--muted); font-size: 1.05rem; }
+.prob-after { font-size: clamp(1.5rem, 2.4vw, 1.75rem); line-height: 1; letter-spacing: -0.03em; }
+.delta {
+  border-radius: 999px; padding: 2px 8px; font-size: .74rem; font-weight: 700;
+  white-space: nowrap;
+}
+.delta.good { background: var(--good-soft); color: var(--good); }
+.delta.bad { background: var(--bad-soft); color: var(--bad); }
+.delta.neutral { background: var(--bg-soft); color: var(--muted); }
+.insight-block .muted { margin: 8px 0 0; font-size: .8rem; }
+.focus-chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
+.focus-chip {
+  background: var(--bg-soft); border-radius: 999px; padding: 4px 9px;
+  font-size: .76rem; line-height: 1.35;
+}
+.focus-chip strong { color: var(--muted); }
+.swing-list { display: grid; gap: 6px; margin-top: 14px; }
+.swing-list .eyebrow { grid-column: 1 / -1; margin-bottom: 0; }
+.eyebrow-note {
+  margin-left: 5px; color: var(--faint); font-size: .64rem; font-weight: 500;
+  letter-spacing: 0; text-transform: none; white-space: nowrap;
+}
+.swing-row {
+  display: grid; grid-template-columns: 52px 1fr auto; align-items: center;
+  gap: 8px; font-size: .8rem; font-variant-numeric: tabular-nums;
+}
+.swing-track { height: 6px; background: var(--line); border-radius: 999px; overflow: hidden; }
+.swing-track span { display: block; height: 100%; background: var(--accent); border-radius: 999px; }
+.availability { margin-top: 14px; }
+.availability ul { display: grid; gap: 6px; margin: 0; padding: 0; list-style: none; }
+.availability li {
+  display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 7px;
+  font-size: .8rem;
+}
+.availability .who { color: var(--faint); font-size: .74rem; }
+.availability .note { flex-basis: 100%; font-size: .76rem; }
+.insight-note { margin: 8px 0 0; color: var(--muted); font-size: .8rem; }
+.insight-block details { margin-top: 12px; }
+.alt-table { min-width: 300px; font-size: .82rem; }
+.alt-table th, .alt-table td { padding: 6px; }
+.cats { margin-top: 6px; }
+.cat-block { margin-top: 16px; }
+.cat-block h4, .lineup h4, .injury-block h4 {
+  margin: 0 0 6px; color: var(--muted); font-size: .82rem; font-weight: 650;
+}
+.table-wrap {
+  overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 0 -4px; padding: 0 4px;
+}
+table { width: 100%; border-collapse: collapse; font-size: .92rem; }
+th {
+  padding: 6px 8px; color: var(--faint); font-size: .7rem; font-weight: 650;
+  letter-spacing: .07em; text-align: left; text-transform: uppercase;
+}
+td { padding: 9px 8px; border-top: 1px solid var(--line-soft); vertical-align: middle; }
+tbody tr:last-child td { border-bottom: 0; }
+.num { text-align: right; font-variant-numeric: tabular-nums; }
+.bar-cell { width: 32%; min-width: 100px; }
+.bar-cell .meter { margin: 0; }
+.lineup { margin-top: 16px; border-top: 1px solid var(--line-soft); padding-top: 14px; }
+.day { margin-top: 8px; }
+.day-label { color: var(--faint); font-size: .76rem; font-variant-numeric: tabular-nums; }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 5px; }
+.chip {
+  display: inline-block; border-radius: 999px; background: var(--bg-soft);
+  padding: 4px 9px; font-size: .78rem; line-height: 1.3; white-space: normal;
+  overflow-wrap: anywhere;
+}
+.chip.good { background: var(--good-soft); color: var(--good); }
+.chip.bad { background: var(--bad-soft); color: var(--bad); }
+.chip.warn { background: var(--warn-soft); color: var(--warn); }
+details { margin-top: 12px; }
+details > summary {
+  display: flex; align-items: center; justify-content: space-between; gap: 10px;
+  min-height: 44px; padding: 0; color: var(--text); cursor: pointer;
+  font-size: .88rem; font-weight: 650; list-style: none;
+}
+details > summary::-webkit-details-marker { display: none; }
+details > summary::after { content: "+"; color: var(--muted); font-size: 1.15rem; line-height: 1; }
+details[open] > summary::after { content: "-"; }
+details > summary:hover { color: var(--accent); }
+.live-cats { border-top: 1px solid var(--line-soft); padding-top: 2px; }
+.grid2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 360px), 1fr));
+  align-items: start;
+  gap: 18px; margin-top: 18px;
+}
+.wide { margin-top: 18px; }
+.table-note { color: var(--muted); font-size: .8rem; text-align: right; }
+.standings { min-width: 340px; font-size: .88rem; }
+.standings th, .standings td { padding: 8px; }
+.standings td:nth-child(3), .standings td:nth-child(4),
+.standings th:nth-child(3), .standings th:nth-child(4) { white-space: nowrap; }
+.standings tr.mine td { background: var(--accent-soft); }
+.standings tr.mine td:first-child { border-radius: 8px 0 0 8px; }
+.standings tr.mine td:last-child { border-radius: 0 8px 8px 0; }
+.standings tr.cutline td { border-bottom: 2px solid var(--accent); }
+.you {
+  display: inline-block; margin-left: 4px; padding: 0 6px; border-radius: 999px;
+  background: var(--accent); color: #fff; font-size: .64rem; font-weight: 700;
+  letter-spacing: .04em; text-transform: uppercase; vertical-align: 1px;
+}
+.injury-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 330px), 1fr));
+  align-items: start;
+  gap: 18px;
+}
+.injury-block h4 { display: flex; align-items: center; justify-content: space-between; }
+.count {
+  display: inline-flex; min-width: 22px; height: 22px; align-items: center;
+  justify-content: center; border-radius: 999px; background: var(--bg-soft);
+  color: var(--muted); font-size: .72rem; font-weight: 650;
+}
+.injury-block ul { display: grid; gap: 0; margin: 0; padding: 0; list-style: none; }
+.injury-block li {
+  display: grid; grid-template-columns: auto 1fr; gap: 3px 8px; align-items: baseline;
+  padding: 9px 0; border-top: 1px solid var(--line-soft); font-size: .88rem;
+}
+.injury-block li:first-child { border-top: 0; }
+.injury-block .who { color: var(--faint); font-size: .76rem; }
+.injury-block .note {
+  grid-column: 1 / -1; color: var(--muted); font-size: .82rem; line-height: 1.45;
+}
+footer {
+  display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 16px;
+  max-width: 1240px; margin: 28px auto 0; padding: 0 clamp(16px, 3vw, 28px) 40px;
+  color: var(--faint); font-size: .8rem;
+}
+footer a { color: var(--muted); text-underline-offset: 3px; }
+@media (hover: hover) {
+  tbody tr:hover td { background: var(--card-2); }
+}
+@media (max-width: 900px) {
+  .grid2 { grid-template-columns: 1fr; }
+}
+@media (max-width: 680px) {
+  .top { align-items: flex-start; }
+  .report { width: 100%; justify-content: center; }
+  .wide .card-head, .grid2 .card-head {
+    flex-direction: column; align-items: flex-start;
+  }
+  .odds-grid { grid-template-columns: 1fr; }
+  .cats-table thead, .live-table thead {
+    position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0;
+    overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0;
+  }
+  .cats-table tr {
+    display: grid; grid-template-columns: 1fr auto;
+    grid-template-areas: "cat p" "you them" "bar bar"; gap: 2px 12px;
+    padding: 10px 0; border-top: 1px solid var(--line-soft);
+  }
+  .cats-table td { padding: 0; border: 0; }
+  .cats-table td:nth-child(1) { grid-area: cat; font-weight: 650; }
+  .cats-table td:nth-child(2) { grid-area: you; }
+  .cats-table td:nth-child(3) { grid-area: them; text-align: right; }
+  .cats-table td:nth-child(4) { grid-area: p; text-align: right; font-weight: 650; }
+  .cats-table td:nth-child(4)::before {
+    content: "P(win) "; color: var(--faint); font-size: .72rem; font-weight: 500;
+  }
+  .cats-table td:nth-child(5) { grid-area: bar; margin-top: 5px; }
+  .cats-table td:nth-child(2)::before,
+  .cats-table td:nth-child(3)::before {
+    color: var(--faint); font-size: .72rem; font-weight: 500;
+  }
+  .cats-table td:nth-child(2)::before { content: "You "; }
+  .cats-table td:nth-child(3)::before { content: "Them "; }
+  .live-table tr {
+    display: grid; grid-template-columns: 1fr auto; gap: 2px 12px;
+    grid-template-areas: "cat res" "you them"; padding: 9px 0;
+    border-top: 1px solid var(--line-soft);
+  }
+  .live-table td { padding: 0; border: 0; }
+  .live-table td:nth-child(1) { grid-area: cat; font-weight: 650; }
+  .live-table td:nth-child(2) { grid-area: you; }
+  .live-table td:nth-child(3) { grid-area: them; text-align: right; }
+  .live-table td:nth-child(4) { grid-area: res; text-align: right; }
+  .live-table td:nth-child(2)::before {
+    content: "You "; color: var(--faint); font-size: .72rem; font-weight: 500;
+  }
+  .live-table td:nth-child(3)::before {
+    content: "Them "; color: var(--faint); font-size: .72rem; font-weight: 500;
+  }
+  .bar-cell { display: block; width: auto; min-width: 0; }
+  .bar-cell .meter { margin: 0; }
+  .card { border-radius: 14px; }
+  .table-note { text-align: left; }
+}
+@media (max-width: 400px) {
+  body { font-size: 15px; }
+  .card { padding: 14px; }
+  h1 { font-size: 1.55rem; }
+  .chip { font-size: .74rem; }
+  .legend { font-size: .82rem; }
+}
+</style></head><body><header class="top"><div class="brand"><h1>High-Roller Hoops</h1><p class="sub">Daily brief · HRH P6 · JLFB P6</p><p class="meta">Generated 2026-11-25T20:46 · blend14 · fantrax positions · 487 players</p></div><a class="report" href="brief-2026-11-25-2046.md">Full report<span aria-hidden="true">↗</span></a></header><main><p class="legend">Bars show your win probability in each category — green is favored, red is behind. &ldquo;Whole-week win&rdquo; is the chance of taking at least five categories.</p><article class="card wide insight-card"><div class="card-head"><div><h2>What to do this week</h2><p class="card-sub">The same simulation as the odds, plus the move behind them</p></div><span class="table-note">add / drop · before → after · swings</span></div><div class="insight-grid"><section class="insight-block league-hrh"><div class="insight-head"><div><h3>Ankle Breakers</h3><p class="card-sub">punts balanced · baseline 58%</p></div><span class="league-chip">HRH</span></div><div class="move-box"><p class="eyebrow">Recommended move</p><div class="move-line"><span class="add">+ Alex Caruso</span><span class="arrow" aria-hidden="true">→</span><span class="drop">&minus; Kris Dunn</span></div><div class="prob-line"><span class="prob-before">58%</span><span class="arrow" aria-hidden="true">→</span><strong class="prob-after">65%</strong><span class="delta good">+6 points</span></div><p class="muted">adds STL and FT%; costs FG%; 2 games left</p><p class="insight-note">Drop: not in the remaining lineup plan</p></div><div class="focus-chips"><span class="focus-chip"><strong>3PM</strong> 87% → 90%</span><span class="focus-chip"><strong>FT%</strong> 61% → 62%</span><span class="focus-chip"><strong>TO</strong> 5% → 7%</span></div><div class="swing-list"><p class="eyebrow">Swing categories <span class="eyebrow-note">bar = closeness to 50%</span></p><div class="swing-row"><span>FG%</span><span class="swing-track"><span style="width:89%"></span></span><span>56% → 54%</span></div><div class="swing-row"><span>STL</span><span class="swing-track"><span style="width:86%"></span></span><span>57% → 71%</span></div><div class="swing-row"><span>FT%</span><span class="swing-track"><span style="width:79%"></span></span><span>61% → 62%</span></div><div class="swing-row"><span>3PM</span><span class="swing-track"><span style="width:26%"></span></span><span>87% → 90%</span></div><div class="swing-row"><span>REB</span><span class="swing-track"><span style="width:15%"></span></span><span>8% → 4%</span></div></div><div class="availability"><p class="eyebrow">Injury windows</p><ul><li><span class="chip bad">Out</span><span class="who">You</span><strong>Dylan Harper</strong><span class="muted note">Out all remaining days</span></li><li><span class="chip bad">Out</span><span class="who">You</span><strong>Evan Mobley</strong><span class="muted note">Out all remaining days</span></li><li><span class="chip bad">Out</span><span class="who">Chaewon Stan</span><strong>Cameron Boozer</strong><span class="muted note">Out all remaining days</span></li><li><span class="chip warn">Day-To-Day</span><span class="who">Chaewon Stan</span><strong>Victor Wembanyama</strong><span class="muted note">Available all remaining days</span></li></ul></div><details><summary>Other adds considered</summary><div class="table-wrap"><table class="alt-table"><thead><tr><th scope="col">Add</th><th scope="col">Games</th><th scope="col">P(win)</th><th scope="col">Δ</th></tr></thead><tbody><tr><td data-label="Add">Caleb Martin</td><td class="num" data-label="Games">1</td><td class="num" data-label="P(win)">62%</td><td class="num" data-label="Delta">+3 points</td></tr><tr><td data-label="Add">Jalen Williams</td><td class="num" data-label="Games">2</td><td class="num" data-label="P(win)">62%</td><td class="num" data-label="Delta">+3 points</td></tr><tr><td data-label="Add">Buddy Hield</td><td class="num" data-label="Games">2</td><td class="num" data-label="P(win)">62%</td><td class="num" data-label="Delta">+3 points</td></tr><tr><td data-label="Add">Will Richard</td><td class="num" data-label="Games">3</td><td class="num" data-label="P(win)">59%</td><td class="num" data-label="Delta">±0 points</td></tr></tbody></table></div></details></section><section class="insight-block league-jlfb"><div class="insight-head"><div><h3>micpuc6</h3><p class="card-sub">punts FG%, 3PM · baseline 60%</p></div><span class="league-chip">JLFB</span></div><div class="swing-list"><p class="eyebrow">Swing categories <span class="eyebrow-note">bar = closeness to 50%</span></p><div class="swing-row"><span>FT%</span><span class="swing-track"><span style="width:89%"></span></span><span>55%</span></div><div class="swing-row"><span>REB</span><span class="swing-track"><span style="width:64%"></span></span><span>32%</span></div><div class="swing-row"><span>FG%</span><span class="swing-track"><span style="width:61%"></span></span><span>30%</span></div><div class="swing-row"><span>PTS</span><span class="swing-track"><span style="width:49%"></span></span><span>75%</span></div><div class="swing-row"><span>STL</span><span class="swing-track"><span style="width:46%"></span></span><span>77%</span></div></div><div class="availability"><p class="eyebrow">Injury windows</p><ul><li><span class="chip warn">Day-To-Day</span><span class="who">You</span><strong>Aaron Nesmith</strong><span class="muted note">Available all remaining days</span></li><li><span class="chip warn">Out</span><span class="who">You</span><strong>Aday Mara</strong><span class="muted note">Out Wed</span></li><li><span class="chip bad">Out</span><span class="who">Brick Squad</span><strong>CJ McCollum</strong><span class="muted note">Out all remaining days</span></li><li><span class="chip bad">Out</span><span class="who">Brick Squad</span><strong>Mark Williams</strong><span class="muted note">Out all remaining days</span></li><li><span class="chip bad">Out</span><span class="who">Brick Squad</span><strong>Maxime Raynaud</strong><span class="muted note">Out all remaining days</span></li><li><span class="chip bad">Out</span><span class="who">Brick Squad</span><strong>Tyrese Haliburton</strong><span class="muted note">Out all remaining days</span></li><li><span class="chip warn">Day-To-Day</span><span class="who">Brick Squad</span><strong>De&#x27;Aaron Fox</strong><span class="muted note">Available all remaining days</span></li><li><span class="chip warn">Out</span><span class="who">Brick Squad</span><strong>Dejounte Murray</strong><span class="muted note">Out Fri</span></li></ul></div><p class="insight-note">Waiver simulation is HRH-only; availability and swings are live.</p></section></div></article><section class="leagues" aria-label="League briefs"><article class="card league league-hrh"><div class="card-head"><div><h2>Ankle Breakers</h2><p class="card-sub">High-Roller Hoops</p></div><div class="badges"><span class="league-chip">HRH</span><span class="period">P6</span></div></div><div class="live"><div class="live-row"><span class="opponent">vs Chaewon Stan</span><strong class="record">5-4-0</strong><span class="muted">games 13-11 · them 4-5-0</span></div></div><details class="live-cats"><summary>Live categories</summary><div class="cat-block"><h4>vs Chaewon Stan</h4><div class="table-wrap"><table class="live-table"><caption class="sr-only">Live category score vs Chaewon Stan</caption><thead><tr><th scope="col">Category</th><th scope="col">You</th><th scope="col">Them</th><th scope="col">Result</th></tr></thead><tbody><tr><td data-label="Category">FG%</td><td class="num" data-label="You">.461</td><td class="num" data-label="Them">.363</td><td data-label="Result"><span class="chip good">WIN</span></td></tr><tr><td data-label="Category">3PTM</td><td class="num" data-label="You">22</td><td class="num" data-label="Them">18</td><td data-label="Result"><span class="chip good">WIN</span></td></tr><tr><td data-label="Category">FT%</td><td class="num" data-label="You">.733</td><td class="num" data-label="Them">.750</td><td data-label="Result"><span class="chip bad">LOSS</span></td></tr><tr><td data-label="Category">PTS</td><td class="num" data-label="You">208</td><td class="num" data-label="Them">129</td><td data-label="Result"><span class="chip good">WIN</span></td></tr><tr><td data-label="Category">REB</td><td class="num" data-label="You">59</td><td class="num" data-label="Them">38</td><td data-label="Result"><span class="chip good">WIN</span></td></tr><tr><td data-label="Category">AST</td><td class="num" data-label="You">54</td><td class="num" data-label="Them">40</td><td data-label="Result"><span class="chip good">WIN</span></td></tr><tr><td data-label="Category">ST</td><td class="num" data-label="You">9</td><td class="num" data-label="Them">12</td><td data-label="Result"><span class="chip bad">LOSS</span></td></tr><tr><td data-label="Category">BLK</td><td class="num" data-label="You">3</td><td class="num" data-label="Them">5</td><td data-label="Result"><span class="chip bad">LOSS</span></td></tr><tr><td data-label="Category">TO</td><td class="num" data-label="You">28</td><td class="num" data-label="Them">16</td><td data-label="Result"><span class="chip bad">LOSS</span></td></tr></tbody></table></div></div></details><div class="odds-grid"><div class="odds"><p class="odds-label">Whole-week win</p><div class="odds-head"><span>vs Chaewon Stan</span><strong class="fav">58%</strong></div><div class="meter" role="img" aria-label="Chaewon Stan whole-week win probability 58%"><span class="good" style="width:58%"></span></div><p class="muted">projected 4.68 category wins</p></div></div><p class="model-note">Whole-week model · through 2026-11-25 · live games pending (added when final); any unstarted games are planned</p><div class="cap"><span class="cap-label">Weekly games</span><strong class="">13 / 35</strong><div class="meter" role="img" aria-label="13 of 35 weekly games used"><span class="good" style="width:37%"></span></div></div><div class="forecast"><span class="forecast-label">Week-start forecast</span><span>2026-11-23 · punts FT%, REB, AST · Chaewon Stan 91%</span></div><div class="cats"><div class="cat-block"><h4>Projected vs Chaewon Stan</h4><div class="table-wrap"><table class="cats-table"><caption class="sr-only">Projected category win probabilities vs Chaewon Stan</caption><thead><tr><th scope="col">Category</th><th scope="col">You</th><th scope="col">Them</th><th scope="col">P(win)</th><th scope="col"><span class="sr-only">Probability</span></th></tr></thead><tbody><tr><td data-label="Category">FG%</td><td class="num" data-label="You">0.452</td><td class="num" data-label="Them">0.445</td><td class="num" data-label="P(win)">56%</td><td class="bar-cell"><div class="meter" role="img" aria-label="FG% win probability 56%"><span class="good" style="width:56%"></span></div></td></tr><tr><td data-label="Category">FT%</td><td class="num" data-label="You">0.817</td><td class="num" data-label="Them">0.790</td><td class="num" data-label="P(win)">61%</td><td class="bar-cell"><div class="meter" role="img" aria-label="FT% win probability 61%"><span class="good" style="width:61%"></span></div></td></tr><tr><td data-label="Category">3PM</td><td class="num" data-label="You">68.2</td><td class="num" data-label="Them">62.4</td><td class="num" data-label="P(win)">87%</td><td class="bar-cell"><div class="meter" role="img" aria-label="3PM win probability 87%"><span class="good" style="width:87%"></span></div></td></tr><tr><td data-label="Category">PTS</td><td class="num" data-label="You">570.4</td><td class="num" data-label="Them">501.3</td><td class="num" data-label="P(win)">95%</td><td class="bar-cell"><div class="meter" role="img" aria-label="PTS win probability 95%"><span class="good" style="width:95%"></span></div></td></tr><tr><td data-label="Category">REB</td><td class="num" data-label="You">154.2</td><td class="num" data-label="Them">173.5</td><td class="num" data-label="P(win)">8%</td><td class="bar-cell"><div class="meter" role="img" aria-label="REB win probability 8%"><span class="bad" style="width:8%"></span></div></td></tr><tr><td data-label="Category">AST</td><td class="num" data-label="You">143.4</td><td class="num" data-label="Them">110.0</td><td class="num" data-label="P(win)">>99%</td><td class="bar-cell"><div class="meter" role="img" aria-label="AST win probability &gt;99%"><span class="good" style="width:100%"></span></div></td></tr><tr><td data-label="Category">STL</td><td class="num" data-label="You">32.5</td><td class="num" data-label="Them">32.1</td><td class="num" data-label="P(win)">57%</td><td class="bar-cell"><div class="meter" role="img" aria-label="STL win probability 57%"><span class="good" style="width:57%"></span></div></td></tr><tr><td data-label="Category">BLK</td><td class="num" data-label="You">13.7</td><td class="num" data-label="Them">26.9</td><td class="num" data-label="P(win)"><1%</td><td class="bar-cell"><div class="meter" role="img" aria-label="BLK win probability &lt;1%"><span class="bad" style="width:0%"></span></div></td></tr><tr><td data-label="Category">TO</td><td class="num" data-label="You">65.4</td><td class="num" data-label="Them">57.8</td><td class="num" data-label="P(win)">5%</td><td class="bar-cell"><div class="meter" role="img" aria-label="TO win probability 5%"><span class="bad" style="width:5%"></span></div></td></tr></tbody></table></div></div></div><div class="lineup"><h4>Lineup plan</h4><div class="day"><span class="day-label">2026-11-25</span><div class="chips"><span class="chip ">Flx1 Keegan Murray</span></div></div><details><summary>Rest of week · 3 days</summary><div class="day"><span class="day-label">2026-11-27</span><div class="chips"><span class="chip ">PG Darius Garland</span><span class="chip ">SG Tyrese Maxey</span><span class="chip ">G Collin Gillespie</span><span class="chip ">SF Nickeil Alexander-Walker</span><span class="chip ">PF Saddiq Bey</span><span class="chip ">F Trey Murphy III</span><span class="chip ">C Derik Queen</span><span class="chip ">Flx1 Daniss Jenkins</span><span class="chip ">Flx2 Derrick White</span></div></div><div class="day"><span class="day-label">2026-11-28</span><div class="chips"><span class="chip ">G Tyrese Maxey</span><span class="chip ">SF Franz Wagner</span><span class="chip ">PF Tristan da Silva</span></div></div><div class="day"><span class="day-label">2026-11-29</span><div class="chips"><span class="chip ">PG Daniss Jenkins</span><span class="chip ">SG Derrick White</span><span class="chip ">G Trey Murphy III</span><span class="chip ">SF Nickeil Alexander-Walker</span><span class="chip ">PF Saddiq Bey</span><span class="chip ">F Franz Wagner</span><span class="chip ">C Derik Queen</span><span class="chip ">Flx1 Collin Gillespie</span><span class="chip ">Flx2 Darius Garland</span></div></div></details></div></article><article class="card league league-jlfb"><div class="card-head"><div><h2>micpuc6</h2><p class="card-sub">JLFB Bowl</p></div><div class="badges"><span class="league-chip">JLFB</span><span class="period">P6</span></div></div><div class="live"><div class="live-row"><span class="opponent">vs Brick Squad</span><strong class="record">7-2-0</strong><span class="muted">games 18-16 · them 2-7-0</span></div><div class="live-row"><span class="opponent">vs Black Swoosh</span><strong class="record">4-5-0</strong><span class="muted">games 18-18 · them 5-4-0</span></div></div><details class="live-cats"><summary>Live categories</summary><div class="cat-block"><h4>vs Brick Squad</h4><div class="table-wrap"><table class="live-table"><caption class="sr-only">Live category score vs Brick Squad</caption><thead><tr><th scope="col">Category</th><th scope="col">You</th><th scope="col">Them</th><th scope="col">Result</th></tr></thead><tbody><tr><td data-label="Category">FG%</td><td class="num" data-label="You">.483</td><td class="num" data-label="Them">.474</td><td data-label="Result"><span class="chip good">WIN</span></td></tr><tr><td data-label="Category">3PTM</td><td class="num" data-label="You">38</td><td class="num" data-label="Them">22</td><td data-label="Result"><span class="chip good">WIN</span></td></tr><tr><td data-label="Category">FT%</td><td class="num" data-label="You">.758</td><td class="num" data-label="Them">.722</td><td data-label="Result"><span class="chip good">WIN</span></td></tr><tr><td data-label="Category">PTS</td><td class="num" data-label="You">318</td><td class="num" data-label="Them">194</td><td data-label="Result"><span class="chip good">WIN</span></td></tr><tr><td data-label="Category">REB</td><td class="num" data-label="You">91</td><td class="num" data-label="Them">86</td><td data-label="Result"><span class="chip good">WIN</span></td></tr><tr><td data-label="Category">AST</td><td class="num" data-label="You">57</td><td class="num" data-label="Them">58</td><td data-label="Result"><span class="chip bad">LOSS</span></td></tr><tr><td data-label="Category">ST</td><td class="num" data-label="You">22</td><td class="num" data-label="Them">10</td><td data-label="Result"><span class="chip good">WIN</span></td></tr><tr><td data-label="Category">BLK</td><td class="num" data-label="You">16</td><td class="num" data-label="Them">9</td><td data-label="Result"><span class="chip good">WIN</span></td></tr><tr><td data-label="Category">TO</td><td class="num" data-label="You">37</td><td class="num" data-label="Them">20</td><td data-label="Result"><span class="chip bad">LOSS</span></td></tr></tbody></table></div></div><div class="cat-block"><h4>vs Black Swoosh</h4><div class="table-wrap"><table class="live-table"><caption class="sr-only">Live category score vs Black Swoosh</caption><thead><tr><th scope="col">Category</th><th scope="col">You</th><th scope="col">Them</th><th scope="col">Result</th></tr></thead><tbody><tr><td data-label="Category">FG%</td><td class="num" data-label="You">.483</td><td class="num" data-label="Them">.510</td><td data-label="Result"><span class="chip bad">LOSS</span></td></tr><tr><td data-label="Category">3PTM</td><td class="num" data-label="You">38</td><td class="num" data-label="Them">28</td><td data-label="Result"><span class="chip good">WIN</span></td></tr><tr><td data-label="Category">FT%</td><td class="num" data-label="You">.758</td><td class="num" data-label="Them">.820</td><td data-label="Result"><span class="chip bad">LOSS</span></td></tr><tr><td data-label="Category">PTS</td><td class="num" data-label="You">318</td><td class="num" data-label="Them">288</td><td data-label="Result"><span class="chip good">WIN</span></td></tr><tr><td data-label="Category">REB</td><td class="num" data-label="You">91</td><td class="num" data-label="Them">100</td><td data-label="Result"><span class="chip bad">LOSS</span></td></tr><tr><td data-label="Category">AST</td><td class="num" data-label="You">57</td><td class="num" data-label="Them">60</td><td data-label="Result"><span class="chip bad">LOSS</span></td></tr><tr><td data-label="Category">ST</td><td class="num" data-label="You">22</td><td class="num" data-label="Them">19</td><td data-label="Result"><span class="chip good">WIN</span></td></tr><tr><td data-label="Category">BLK</td><td class="num" data-label="You">16</td><td class="num" data-label="Them">13</td><td data-label="Result"><span class="chip good">WIN</span></td></tr><tr><td data-label="Category">TO</td><td class="num" data-label="You">37</td><td class="num" data-label="Them">23</td><td data-label="Result"><span class="chip bad">LOSS</span></td></tr></tbody></table></div></div></details><div class="odds-grid"><div class="odds"><p class="odds-label">Whole-week win</p><div class="odds-head"><span>vs Brick Squad</span><strong class="fav">84%</strong></div><div class="meter" role="img" aria-label="Brick Squad whole-week win probability 84%"><span class="good" style="width:84%"></span></div><p class="muted">projected 5.30 category wins</p></div><div class="odds"><p class="odds-label">Whole-week win</p><div class="odds-head"><span>vs Black Swoosh</span><strong class="dog">36%</strong></div><div class="meter" role="img" aria-label="Black Swoosh whole-week win probability 36%"><span class="bad" style="width:36%"></span></div><p class="muted">projected 4.09 category wins</p></div></div><p class="model-note">Whole-week model · through 2026-11-25 · live games pending (added when final); any unstarted games are planned</p><div class="cap"><span class="cap-label">Weekly games</span><strong class="">18 / 40</strong><div class="meter" role="img" aria-label="18 of 40 weekly games used"><span class="good" style="width:45%"></span></div></div><div class="forecast"><span class="forecast-label">Week-start forecast</span><span>2026-11-23 · punts FG%, FT%, PTS · Brick Squad 84% · Black Swoosh 30%</span></div><div class="cats"><div class="cat-block"><h4>Projected vs Brick Squad</h4><div class="table-wrap"><table class="cats-table"><caption class="sr-only">Projected category win probabilities vs Brick Squad</caption><thead><tr><th scope="col">Category</th><th scope="col">You</th><th scope="col">Them</th><th scope="col">P(win)</th><th scope="col"><span class="sr-only">Probability</span></th></tr></thead><tbody><tr><td data-label="Category">FG%</td><td class="num" data-label="You">0.464</td><td class="num" data-label="Them">0.477</td><td class="num" data-label="P(win)">39%</td><td class="bar-cell"><div class="meter" role="img" aria-label="FG% win probability 39%"><span class="bad" style="width:39%"></span></div></td></tr><tr><td data-label="Category">FT%</td><td class="num" data-label="You">0.788</td><td class="num" data-label="Them">0.744</td><td class="num" data-label="P(win)">72%</td><td class="bar-cell"><div class="meter" role="img" aria-label="FT% win probability 72%"><span class="good" style="width:72%"></span></div></td></tr><tr><td data-label="Category">3PM</td><td class="num" data-label="You">80.5</td><td class="num" data-label="Them">54.7</td><td class="num" data-label="P(win)">>99%</td><td class="bar-cell"><div class="meter" role="img" aria-label="3PM win probability &gt;99%"><span class="good" style="width:100%"></span></div></td></tr><tr><td data-label="Category">PTS</td><td class="num" data-label="You">630.3</td><td class="num" data-label="Them">508.0</td><td class="num" data-label="P(win)">>99%</td><td class="bar-cell"><div class="meter" role="img" aria-label="PTS win probability &gt;99%"><span class="good" style="width:100%"></span></div></td></tr><tr><td data-label="Category">REB</td><td class="num" data-label="You">201.5</td><td class="num" data-label="Them">221.0</td><td class="num" data-label="P(win)">9%</td><td class="bar-cell"><div class="meter" role="img" aria-label="REB win probability 9%"><span class="bad" style="width:9%"></span></div></td></tr><tr><td data-label="Category">AST</td><td class="num" data-label="You">122.5</td><td class="num" data-label="Them">131.7</td><td class="num" data-label="P(win)">15%</td><td class="bar-cell"><div class="meter" role="img" aria-label="AST win probability 15%"><span class="bad" style="width:15%"></span></div></td></tr><tr><td data-label="Category">STL</td><td class="num" data-label="You">40.4</td><td class="num" data-label="Them">31.3</td><td class="num" data-label="P(win)">>99%</td><td class="bar-cell"><div class="meter" role="img" aria-label="STL win probability &gt;99%"><span class="good" style="width:100%"></span></div></td></tr><tr><td data-label="Category">BLK</td><td class="num" data-label="You">29.3</td><td class="num" data-label="Them">25.8</td><td class="num" data-label="P(win)">95%</td><td class="bar-cell"><div class="meter" role="img" aria-label="BLK win probability 95%"><span class="good" style="width:95%"></span></div></td></tr><tr><td data-label="Category">TO</td><td class="num" data-label="You">70.7</td><td class="num" data-label="Them">59.9</td><td class="num" data-label="P(win)">1%</td><td class="bar-cell"><div class="meter" role="img" aria-label="TO win probability 1%"><span class="bad" style="width:1%"></span></div></td></tr></tbody></table></div></div><div class="cat-block"><h4>Projected vs Black Swoosh</h4><div class="table-wrap"><table class="cats-table"><caption class="sr-only">Projected category win probabilities vs Black Swoosh</caption><thead><tr><th scope="col">Category</th><th scope="col">You</th><th scope="col">Them</th><th scope="col">P(win)</th><th scope="col"><span class="sr-only">Probability</span></th></tr></thead><tbody><tr><td data-label="Category">FG%</td><td class="num" data-label="You">0.464</td><td class="num" data-label="Them">0.498</td><td class="num" data-label="P(win)">22%</td><td class="bar-cell"><div class="meter" role="img" aria-label="FG% win probability 22%"><span class="bad" style="width:22%"></span></div></td></tr><tr><td data-label="Category">FT%</td><td class="num" data-label="You">0.788</td><td class="num" data-label="Them">0.809</td><td class="num" data-label="P(win)">39%</td><td class="bar-cell"><div class="meter" role="img" aria-label="FT% win probability 39%"><span class="bad" style="width:39%"></span></div></td></tr><tr><td data-label="Category">3PM</td><td class="num" data-label="You">80.5</td><td class="num" data-label="Them">65.8</td><td class="num" data-label="P(win)">>99%</td><td class="bar-cell"><div class="meter" role="img" aria-label="3PM win probability &gt;99%"><span class="good" style="width:100%"></span></div></td></tr><tr><td data-label="Category">PTS</td><td class="num" data-label="You">630.3</td><td class="num" data-label="Them">629.0</td><td class="num" data-label="P(win)">51%</td><td class="bar-cell"><div class="meter" role="img" aria-label="PTS win probability 51%"><span class="good" style="width:51%"></span></div></td></tr><tr><td data-label="Category">REB</td><td class="num" data-label="You">201.5</td><td class="num" data-label="Them">200.0</td><td class="num" data-label="P(win)">54%</td><td class="bar-cell"><div class="meter" role="img" aria-label="REB win probability 54%"><span class="good" style="width:54%"></span></div></td></tr><tr><td data-label="Category">AST</td><td class="num" data-label="You">122.5</td><td class="num" data-label="Them">135.8</td><td class="num" data-label="P(win)">7%</td><td class="bar-cell"><div class="meter" role="img" aria-label="AST win probability 7%"><span class="bad" style="width:7%"></span></div></td></tr><tr><td data-label="Category">STL</td><td class="num" data-label="You">40.4</td><td class="num" data-label="Them">40.1</td><td class="num" data-label="P(win)">54%</td><td class="bar-cell"><div class="meter" role="img" aria-label="STL win probability 54%"><span class="good" style="width:54%"></span></div></td></tr><tr><td data-label="Category">BLK</td><td class="num" data-label="You">29.3</td><td class="num" data-label="Them">28.1</td><td class="num" data-label="P(win)">72%</td><td class="bar-cell"><div class="meter" role="img" aria-label="BLK win probability 72%"><span class="good" style="width:72%"></span></div></td></tr><tr><td data-label="Category">TO</td><td class="num" data-label="You">70.7</td><td class="num" data-label="Them">64.7</td><td class="num" data-label="P(win)">10%</td><td class="bar-cell"><div class="meter" role="img" aria-label="TO win probability 10%"><span class="bad" style="width:10%"></span></div></td></tr></tbody></table></div></div></div><div class="lineup"><h4>Lineup plan</h4><div class="day"><span class="day-label">2026-11-27</span><div class="chips"><span class="chip ">G Trey Murphy III</span><span class="chip ">G2 Herbert Jones</span><span class="chip ">C Derik Queen</span><span class="chip ">Flx1 Tyrese Maxey</span><span class="chip ">Flx2 Paul George</span><span class="chip ">Flx3 Saddiq Bey</span><span class="chip ">Flx4 P.J. Washington Jr.</span><span class="chip ">Flx5 Myles Turner</span></div></div><details><summary>Rest of week · 2 days</summary><div class="day"><span class="day-label">2026-11-28</span><div class="chips"><span class="chip ">G Tyrese Maxey</span><span class="chip ">F Kyshawn George</span><span class="chip ">F2 Desmond Bane</span><span class="chip ">C Myles Turner</span><span class="chip ">Flx2 Naz Reid</span><span class="chip ">Flx5 Aday Mara</span></div></div><div class="day"><span class="day-label">2026-11-29</span><div class="chips"><span class="chip ">G Peyton Watson</span><span class="chip ">F Herbert Jones</span><span class="chip ">F2 Saddiq Bey</span><span class="chip ">C Derik Queen</span><span class="chip ">Flx2 Trey Murphy III</span><span class="chip ">Flx3 Paul George</span><span class="chip ">Flx4 Desmond Bane</span><span class="chip ">Flx5 Donovan Mitchell</span></div></div></details></div></article></section><section class="grid2" aria-label="Standings"><article class="card"><div class="card-head"><h2>High-Roller Hoops</h2><span class="table-note">Top 4 · punishment pool 6</span></div><div class="table-wrap"><table class="standings"><caption class="sr-only">High-Roller Hoops standings</caption><thead><tr><th scope="col">#</th><th scope="col">Team</th><th scope="col">Record</th><th scope="col">Win%</th></tr></thead><tbody><tr class=""><td class="num">1</td><td>LaBerhe Ball</td><td class="num">4-1-0</td><td class="num">0.800</td></tr><tr class=""><td class="num">2</td><td>HezBallah</td><td class="num">4-1-0</td><td class="num">0.800</td></tr><tr class=""><td class="num">3</td><td>spidaman</td><td class="num">3-2-0</td><td class="num">0.600</td></tr><tr class="cutline"><td class="num">4</td><td>Chaewon Stan</td><td class="num">3-2-0</td><td class="num">0.600</td></tr><tr class=""><td class="num">5</td><td>Hugh Jass</td><td class="num">3-2-0</td><td class="num">0.600</td></tr><tr class=""><td class="num">6</td><td>Horses in the Back</td><td class="num">2-3-0</td><td class="num">0.400</td></tr><tr class=""><td class="num">7</td><td>Old Age Security</td><td class="num">2-3-0</td><td class="num">0.400</td></tr><tr class=""><td class="num">8</td><td>And-One</td><td class="num">2-3-0</td><td class="num">0.400</td></tr><tr class="mine"><td class="num">9</td><td>Ankle Breakers <span class="you">you</span></td><td class="num">2-3-0</td><td class="num">0.400</td></tr><tr class=""><td class="num">10</td><td>Exciting whites</td><td class="num">0-5-0</td><td class="num">0.000</td></tr></tbody></table></div></article><article class="card"><div class="card-head"><h2>JLFB Bowl</h2><span class="table-note">Top 24</span></div><div class="table-wrap"><table class="standings"><caption class="sr-only">JLFB Bowl standings</caption><thead><tr><th scope="col">#</th><th scope="col">Team</th><th scope="col">Record</th><th scope="col">Win%</th></tr></thead><tbody><tr class=""><td class="num">1</td><td>nacuamatata10</td><td class="num">61-28-1</td><td class="num">0.683</td></tr><tr class=""><td class="num">2</td><td>kbw612</td><td class="num">60-30-0</td><td class="num">0.667</td></tr><tr class=""><td class="num">3</td><td>jell8738</td><td class="num">59-29-2</td><td class="num">0.667</td></tr><tr class=""><td class="num">4</td><td>figure_eight</td><td class="num">56-30-4</td><td class="num">0.644</td></tr><tr class=""><td class="num">5</td><td>The Wizards of Oz</td><td class="num">55-34-1</td><td class="num">0.617</td></tr><tr class=""><td class="num">6</td><td>DU30</td><td class="num">55-35-0</td><td class="num">0.611</td></tr><tr class=""><td class="num">7</td><td>justinofnixa</td><td class="num">54-34-2</td><td class="num">0.611</td></tr><tr class=""><td class="num">8</td><td>@ShamsCharania</td><td class="num">54-35-1</td><td class="num">0.606</td></tr><tr class=""><td class="num">9</td><td>antswong</td><td class="num">53-36-1</td><td class="num">0.594</td></tr><tr class=""><td class="num">10</td><td>yotamrab8565</td><td class="num">53-37-0</td><td class="num">0.589</td></tr><tr class="gap"><td colspan="4">…</td></tr><tr class="cutline"><td class="num">24</td><td>Edey Like Sunday Morning</td><td class="num">50-40-0</td><td class="num">0.556</td></tr><tr class=""><td class="num">24</td><td>FantasyISO</td><td class="num">50-40-0</td><td class="num">0.556</td></tr><tr class=""><td class="num">26</td><td>tcam1878</td><td class="num">48-39-3</td><td class="num">0.550</td></tr><tr class="gap"><td colspan="4">…</td></tr><tr class="mine"><td class="num">64</td><td>drifterspence <span class="you">you</span></td><td class="num">41-47-2</td><td class="num">0.467</td></tr></tbody></table></div></article></section><article class="card wide"><div class="card-head"><h2>Injuries that matter</h2><span class="table-note">you and this week&#39;s opponents</span></div><div class="injury-grid"><div class="injury-block"><h4>High-Roller Hoops<span class="count">4</span></h4><ul><li><span class="chip bad">Out</span><span class="who">You · Ankle Breakers</span><strong>Dylan Harper</strong><span class="muted note">Harper (hip) is expected to miss two to three weeks, Brett Siegel of ClutchPoints.com reports.</span></li><li><span class="chip bad">Out</span><span class="who">You · Ankle Breakers</span><strong>Evan Mobley</strong><span class="muted note">Mobley will receive treatment and participate in rehab after the team confirmed a diagnosis of a right great toe sprain, and he&#x27;ll be re-evaluated in the next 7-to-10 days.</span></li><li><span class="chip bad">Out</span><span class="who">Opponent · Chaewon Stan</span><strong>Cameron Boozer</strong><span class="muted note">Boozer (ankle) will be re-evaluated in four weeks, Brett Siegel of ClutchPoints.com reports.</span></li><li><span class="chip warn">Day-To-Day</span><span class="who">Opponent · Chaewon Stan</span><strong>Victor Wembanyama</strong><span class="muted note">Wembanyama (back) is questionable for Wednesday&#x27;s game in Portland.</span></li></ul></div><div class="injury-block"><h4>JLFB Bowl<span class="count">9</span></h4><ul><li><span class="chip bad">Out</span><span class="who">You · micpuc6</span><strong>Aday Mara</strong><span class="muted note">Mara (leg) is out for Wednesday&#x27;s game versus the Timberwolves.</span></li><li><span class="chip bad">Out</span><span class="who">Opponent · Black Swoosh</span><strong>Austin Reaves</strong><span class="muted note">Reaves (heel) was a full participant in Wednesday&#x27;s practice, Daniel Starkand of LakersNation.com reports.</span></li><li><span class="chip bad">Out</span><span class="who">Opponent · Brick Squad</span><strong>CJ McCollum</strong><span class="muted note">McCollum (calf) will miss at least four weeks, per Brad Rowland of the Locked On Podcast Network.</span></li><li><span class="chip bad">Out</span><span class="who">Opponent · Brick Squad</span><strong>Dejounte Murray</strong><span class="muted note">Murray (ankle) is out for Friday&#x27;s game against Memphis.</span></li><li><span class="chip bad">Out</span><span class="who">Opponent · Brick Squad</span><strong>Mark Williams</strong><span class="muted note">Williams underwent surgery Thursday to repair a torn labrum in his left shoulder and will miss an extended period of time, Shams Charania of ESPN reports.</span></li><li><span class="chip bad">Out</span><span class="who">Opponent · Brick Squad</span><strong>Tyrese Haliburton</strong><span class="muted note">Haliburton (hamstring) was recalled from the G League&#x27;s Noblesville Boom on Tuesday, Tony East of Forbes.com reports.</span></li><li><span class="chip bad">Out</span><span class="who">Opponent · Brick Squad</span><strong>Maxime Raynaud</strong><span class="muted note">Raynaud (knee) was recalled from the G League&#x27;s Stockton Kings on Wednesday, Marc J. Spears of ESPN.com reports.</span></li><li><span class="chip warn">Day-To-Day</span><span class="who">You · micpuc6</span><strong>Aaron Nesmith</strong><span class="muted note">Nesmith is out for Monday&#x27;s game against the Thunder due to right foot soreness.</span></li><li><span class="chip warn">Day-To-Day</span><span class="who">Opponent · Brick Squad</span><strong>DeAaron Fox</strong><span class="muted note">Fox (shin) is questionable to play Wednesday&#x27;s game against the Trail Blazers.</span></li></ul></div></div></article></main><footer><span>Read-only · regenerated through the day by the daily brief</span><a href="brief-2026-11-25-2046.md">Full report</a></footer></body></html>

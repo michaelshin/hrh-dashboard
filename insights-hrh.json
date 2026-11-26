@@ -1,0 +1,371 @@
+{
+ "league": "hrh",
+ "team": "Ankle Breakers",
+ "period": 6,
+ "through": "2026-11-25",
+ "punts": [],
+ "generated": "2026-11-25",
+ "baseline": {
+  "p_win": 0.5849,
+  "mean_wins": 4.6799,
+  "categories": {
+   "FG%": {
+    "p_win": 0.55695,
+    "you": 0.4516752325049481,
+    "them": 0.4450298529290215
+   },
+   "FT%": {
+    "p_win": 0.60675,
+    "you": 0.8169758969672655,
+    "them": 0.7897686290551894
+   },
+   "3PM": {
+    "p_win": 0.86895,
+    "you": 68.20405719886506,
+    "them": 62.39428951143802
+   },
+   "PTS": {
+    "p_win": 0.94775,
+    "you": 570.4157037481522,
+    "them": 501.2664034084067
+   },
+   "REB": {
+    "p_win": 0.0753,
+    "you": 154.19514283509955,
+    "them": 173.50417004599086
+   },
+   "AST": {
+    "p_win": 0.99975,
+    "you": 143.43567832395937,
+    "them": 110.01255897626486
+   },
+   "STL": {
+    "p_win": 0.5713,
+    "you": 32.53008206402749,
+    "them": 32.09910251442257
+   },
+   "BLK": {
+    "p_win": 0.0,
+    "you": 13.658189308125747,
+    "them": 26.883297413285362
+   },
+   "TO": {
+    "p_win": 0.05315,
+    "you": 65.39448123267448,
+    "them": 57.78141562049203
+   }
+  },
+  "plan": {
+   "Keegan Murray": 1,
+   "Darius Garland": 2,
+   "Derrick White": 2,
+   "Collin Gillespie": 2,
+   "Saddiq Bey": 2,
+   "Trey Murphy III": 2,
+   "Nickeil Alexander-Walker": 2,
+   "Derik Queen": 2,
+   "Tyrese Maxey": 2,
+   "Daniss Jenkins": 2,
+   "Franz Wagner": 2,
+   "Tristan da Silva": 1
+  },
+  "cap": 22
+ },
+ "availability": [
+  {
+   "player": "Dylan Harper",
+   "status": "Out",
+   "note": "Harper (hip) is expected to miss two to three weeks, Brett Siegel of ClutchPoints.com reports.",
+   "window": "Out all remaining days",
+   "days_out": [
+    "2026-11-25",
+    "2026-11-27",
+    "2026-11-28",
+    "2026-11-29"
+   ],
+   "tone": "bad",
+   "mine": true,
+   "team": "Ankle Breakers"
+  },
+  {
+   "player": "Evan Mobley",
+   "status": "Out",
+   "note": "Mobley will receive treatment and participate in rehab after the team confirmed a diagnosis of a right great toe sprain, and he'll be re-evaluated in the next 7-to-10 days.",
+   "window": "Out all remaining days",
+   "days_out": [
+    "2026-11-25",
+    "2026-11-27",
+    "2026-11-28",
+    "2026-11-29"
+   ],
+   "tone": "bad",
+   "mine": true,
+   "team": "Ankle Breakers"
+  },
+  {
+   "player": "Cameron Boozer",
+   "status": "Out",
+   "note": "Boozer (ankle) will be re-evaluated in four weeks, Brett Siegel of ClutchPoints.com reports.",
+   "window": "Out all remaining days",
+   "days_out": [
+    "2026-11-25",
+    "2026-11-27",
+    "2026-11-28",
+    "2026-11-29"
+   ],
+   "tone": "bad",
+   "mine": false,
+   "team": "Chaewon Stan"
+  },
+  {
+   "player": "Victor Wembanyama",
+   "status": "Day-To-Day",
+   "note": "Wembanyama (back) is questionable for Wednesday's game in Portland.",
+   "window": "Available all remaining days",
+   "days_out": [],
+   "tone": "warn",
+   "mine": false,
+   "team": "Chaewon Stan"
+  }
+ ],
+ "move": {
+  "add": "Alex Caruso",
+  "team": "OKC",
+  "positions": [
+   "PG",
+   "SF",
+   "SG"
+  ],
+  "games": 2,
+  "p_win": 0.64705,
+  "delta": 0.06215000000000004,
+  "mean_wins": 4.82425,
+  "categories": [
+   {
+    "cat": "FG%",
+    "before": 0.55695,
+    "after": 0.54335,
+    "delta": -0.013599999999999945,
+    "you_before": 0.4516752325049481,
+    "you_after": 0.45024260006126043,
+    "them": 0.4450298529290215
+   },
+   {
+    "cat": "FT%",
+    "before": 0.60675,
+    "after": 0.62075,
+    "delta": 0.014000000000000012,
+    "you_before": 0.8169758969672655,
+    "you_after": 0.8205412813484556,
+    "them": 0.7897686290551894
+   },
+   {
+    "cat": "3PM",
+    "before": 0.86895,
+    "after": 0.8993,
+    "delta": 0.030349999999999988,
+    "you_before": 68.20405719886506,
+    "you_after": 69.05317712628533,
+    "them": 62.39428951143802
+   },
+   {
+    "cat": "PTS",
+    "before": 0.94775,
+    "after": 0.94015,
+    "delta": -0.00759999999999994,
+    "you_before": 570.4157037481522,
+    "you_after": 567.5622495759683,
+    "them": 501.2664034084067
+   },
+   {
+    "cat": "REB",
+    "before": 0.0753,
+    "after": 0.0395,
+    "delta": -0.035800000000000005,
+    "you_before": 154.19514283509955,
+    "you_after": 150.26095598781285,
+    "them": 173.50417004599086
+   },
+   {
+    "cat": "AST",
+    "before": 0.99975,
+    "after": 0.9998,
+    "delta": 4.999999999999449e-05,
+    "you_before": 143.43567832395937,
+    "you_after": 143.489411325158,
+    "them": 110.01255897626486
+   },
+   {
+    "cat": "STL",
+    "before": 0.5713,
+    "after": 0.71185,
+    "delta": 0.14054999999999995,
+    "you_before": 32.53008206402749,
+    "you_after": 33.53278859916841,
+    "them": 32.09910251442257
+   },
+   {
+    "cat": "BLK",
+    "before": 0.0,
+    "after": 0.0,
+    "delta": 0.0,
+    "you_before": 13.658189308125747,
+    "you_after": 13.262811757370534,
+    "them": 26.883297413285362
+   },
+   {
+    "cat": "TO",
+    "before": 0.05315,
+    "after": 0.06955,
+    "delta": 0.016399999999999998,
+    "you_before": 65.39448123267448,
+    "you_after": 64.70323487479575,
+    "them": 57.78141562049203
+   }
+  ],
+  "reason": "adds STL and FT%; costs FG%; 2 games left",
+  "drop": "Kris Dunn",
+  "drop_games": 0,
+  "drop_reason": "not in the remaining lineup plan",
+  "p_win_before": 0.5849,
+  "p_win_after": 0.64705,
+  "mean_wins_before": 4.6799,
+  "p_win_drop_only": 0.58865,
+  "note": ""
+ },
+ "alternatives": [
+  {
+   "add": "Caleb Martin",
+   "team": "DAL",
+   "positions": [
+    "SF"
+   ],
+   "games": 1,
+   "p_win": 0.6189,
+   "delta": 0.03400000000000003,
+   "mean_wins": 4.76685,
+   "reason": "adds STL and FG%; costs FT%; 1 game left"
+  },
+  {
+   "add": "Jalen Williams",
+   "team": "OKC",
+   "positions": [
+    "PF",
+    "SF",
+    "SG"
+   ],
+   "games": 2,
+   "p_win": 0.61715,
+   "delta": 0.03225,
+   "mean_wins": 4.75635,
+   "reason": "adds STL; 2 games left"
+  },
+  {
+   "add": "Buddy Hield",
+   "team": "CHI",
+   "positions": [
+    "PG",
+    "SF",
+    "SG"
+   ],
+   "games": 2,
+   "p_win": 0.6164,
+   "delta": 0.03149999999999997,
+   "mean_wins": 4.76405,
+   "reason": "adds 3PM and STL; 2 games left"
+  },
+  {
+   "add": "Will Richard",
+   "team": "GS",
+   "positions": [
+    "SG"
+   ],
+   "games": 3,
+   "p_win": 0.58865,
+   "delta": 0.003750000000000031,
+   "mean_wins": 4.68505,
+   "reason": "adds STL and FT%; 3 games left"
+  }
+ ],
+ "swings": [
+  {
+   "cat": "FG%",
+   "before": 0.55695,
+   "after": 0.54335,
+   "delta": -0.013599999999999945,
+   "you_before": 0.4516752325049481,
+   "you_after": 0.45024260006126043,
+   "them": 0.4450298529290215,
+   "leverage": 0.8861000000000001
+  },
+  {
+   "cat": "STL",
+   "before": 0.5713,
+   "after": 0.71185,
+   "delta": 0.14054999999999995,
+   "you_before": 32.53008206402749,
+   "you_after": 33.53278859916841,
+   "them": 32.09910251442257,
+   "leverage": 0.8573999999999999
+  },
+  {
+   "cat": "FT%",
+   "before": 0.60675,
+   "after": 0.62075,
+   "delta": 0.014000000000000012,
+   "you_before": 0.8169758969672655,
+   "you_after": 0.8205412813484556,
+   "them": 0.7897686290551894,
+   "leverage": 0.7865
+  },
+  {
+   "cat": "3PM",
+   "before": 0.86895,
+   "after": 0.8993,
+   "delta": 0.030349999999999988,
+   "you_before": 68.20405719886506,
+   "you_after": 69.05317712628533,
+   "them": 62.39428951143802,
+   "leverage": 0.2621
+  },
+  {
+   "cat": "REB",
+   "before": 0.0753,
+   "after": 0.0395,
+   "delta": -0.035800000000000005,
+   "you_before": 154.19514283509955,
+   "you_after": 150.26095598781285,
+   "them": 173.50417004599086,
+   "leverage": 0.15060000000000007
+  }
+ ],
+ "focus": [
+  {
+   "cat": "3PM",
+   "before": 0.86895,
+   "after": 0.8993,
+   "delta": 0.030349999999999988,
+   "you_before": 68.20405719886506,
+   "you_after": 69.05317712628533,
+   "them": 62.39428951143802
+  },
+  {
+   "cat": "FT%",
+   "before": 0.60675,
+   "after": 0.62075,
+   "delta": 0.014000000000000012,
+   "you_before": 0.8169758969672655,
+   "you_after": 0.8205412813484556,
+   "them": 0.7897686290551894
+  },
+  {
+   "cat": "TO",
+   "before": 0.05315,
+   "after": 0.06955,
+   "delta": 0.016399999999999998,
+   "you_before": 65.39448123267448,
+   "you_after": 64.70323487479575,
+   "them": 57.78141562049203
+  }
+ ]
+}
